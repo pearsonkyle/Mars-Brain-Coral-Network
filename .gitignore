@@ -1,0 +1,10 @@
+*.pkl
+*.JP2
+*.jp2
+output/*/*.JP2
+output/*/*.jp2
+*/*.DS_Store
+*.DS_Store
+*.pdf
+output/
+mask.png
