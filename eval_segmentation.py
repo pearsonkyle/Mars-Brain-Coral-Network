@@ -25,6 +25,9 @@ def parse_args():
                          default="images/ESP_037262_1845_RED_A_01_ORTHO.JP2")
                          #default="images/ESP_077488_2205_RED.JP2")
 
+    # add arg for low-memory mode (float16)
+    parser.add_argument('--lowmem', action='store_true', help='use float16 to save memory (slower but should work on 32GB Mac M2Pro)')
+
     parser.add_argument('--threads', action='store', default=8, type=int, 
                         help='Number of threads to use when decoding JPEG2000 files')
 
@@ -87,6 +90,7 @@ if __name__ == "__main__":
     # tile image, reduces boxy artifacts
     overlap = 0.5
     BI = view_as_windows(idata, args.size, step=int(args.size*overlap))
+    BIshape = BI.shape # for memory opt. later
     
     # mask out black parts of image
     imask = np.mean(BI, axis=(2,3))>10
@@ -94,14 +98,17 @@ if __name__ == "__main__":
     # flatten array
     BIR = BI[imask].reshape(-1, args.size, args.size)
 
-    # batch data cus gpu memory is limited
-    pred = np.zeros((BIR.shape[0], *segmentor.output.shape[1:]))
+    # change precision of prediction to float16 to save memory
+    if args.lowmem:
+        pred = np.zeros((BIR.shape[0], *segmentor.output.shape[1:]), dtype=np.float16)
+    else:
+        pred = np.zeros((BIR.shape[0], *segmentor.output.shape[1:]))
 
     # batch size depends on computer memory
-    if args.size > 512:
-        batch = 500
-    else:
-        batch = 1000
+    batch = 1000
+
+    # clean up memory
+    del BI, idata
 
     # print number of batches
     print(f"Segmenting {BIR.shape[0]} tiles in {BIR.shape[0]//batch+1} batches of {batch} tiles")
@@ -109,11 +116,21 @@ if __name__ == "__main__":
     # batch data based on gpu memory
     for i in range(0,BIR.shape[0],batch):
         sub=slice(i,i+batch)
-        pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=1)
 
-        # clean up memory for really large image, really slow :(
+        # predict
+        if args.lowmem:
+            # cast to float16 to save memory, will be slower
+            pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=1).astype(np.float16)
+        else:
+            pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=1)
+
+        # clean up memory for really large images
         if BIR.shape[0] > batch and i%batch == 0:
             _ = gc.collect()
+
+    # clean up memory
+    del BIR
+    _ = gc.collect()
 
     print('Reshaping output...')
     # only take center of each prediction, this ignores edge effects in the cnn
@@ -121,14 +138,20 @@ if __name__ == "__main__":
     pred = pred[:, crop,crop]
 
     # reshape to original image size
-    BO = np.zeros((BI.shape[0], BI.shape[1], pred[0].shape[0], pred[0].shape[1], pred[0].shape[2]))
+    BO = np.zeros((BIshape[0], BIshape[1], pred[0].shape[0], pred[0].shape[1], pred[0].shape[2]))
     BO[imask] = pred
 
     # convert to image with multiple channels
-    heatmap = BO.swapaxes(1,2).reshape(BI.shape[0]*pred[0].shape[0], BI.shape[1]*pred[0].shape[1], pred[0].shape[2] )
+    heatmap = BO.swapaxes(1,2).reshape(BIshape[0]*pred[0].shape[0], BIshape[1]*pred[0].shape[1], pred[0].shape[2] )
+
+    # clean up memory
+    del BO, pred, imask
 
     # create mask using max of channel
     mask = heatmap[:,:,0] > 0.55 # 0th channel is brain coral
+
+    # clean up memory
+    del heatmap
 
     # clean up mask
     print("Cleaning up mask...")
