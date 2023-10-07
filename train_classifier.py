@@ -5,15 +5,17 @@ import time
 import argparse
 import numpy as np
 import tensorflow as tf
-import matplotlib.pyplot as plt
-from jpeg2dct.numpy import loads
 from tensorflow.keras import layers, Model
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.applications.resnet50 import ResNet50
-from tensorflow.keras.applications import MobileNetV2, MobileNetV3Small
-from sklearn.metrics import confusion_matrix
-from turbojpeg import TurboJPEG, TJSAMP_GRAY, TJPF_GRAY, TJFLAG_ACCURATEDCT
+from tensorflow.keras.applications import MobileNetV3Small
 import glymur
+
+try:
+    from jpeg2dct.numpy import loads
+    from turbojpeg import TurboJPEG, TJSAMP_GRAY, TJPF_GRAY, TJFLAG_ACCURATEDCT
+except:
+    print("TurboJPEG not installed, DCT mode will not work")
 
 from create_training_data import create_samples
 
@@ -37,7 +39,7 @@ def parse_args():
 
     parser.add_argument("-v", "--verbose", help="verbosity", action="store_true")
 
-    parser.add_argument("--gpu", default=3, type=int, help='specify which gpu to use')
+    parser.add_argument("--gpu", default=0, type=int, help='specify which gpu to use')
 
     return parser.parse_args()
 
@@ -109,7 +111,6 @@ def reshape64Channels(block, size):
         coef[j // 32, j % 4, 8 * ((j % 32) // 4):8 * ((j % 32) // 4) + 8] = block[j // 4, (8 * j) % 32:(8 * j) % 32 + 8]
     return coef
 
-    
 def make_rnet(input_shape=(32,32,64), output_channels=2, dropout_rate=0.15):
     """
     Make ResNet50 model
@@ -130,7 +131,7 @@ def make_rnet(input_shape=(32,32,64), output_channels=2, dropout_rate=0.15):
     tf.keras.Model
         ResNet50 model
     """
-    if np.ndim(input_shape) == 2: # image and not dct input
+    if len(input_shape) == 2: # image and not dct input
         inputs = layers.Input(shape=(input_shape))
         ninputs = layers.LayerNormalization()(inputs) # mean=0, std=1
         resize = layers.Reshape((*input_shape,1), name="input_image")(ninputs)
@@ -170,7 +171,7 @@ def make_mnet(input_shape=(32,32), output_channels=2, alpha=1, minimalistic=True
     tf.keras.Model
         MobileNetV3Small model
     """
-    if np.ndim(input_shape) == 2:
+    if len(input_shape) == 2: # single color channel, array of shape ~(256,256)
         inputs = layers.Input(shape=(input_shape))
         ninputs = layers.LayerNormalization()(inputs) # mean=0, std=1
         resize = layers.Reshape((*input_shape,1), name="input_image")(ninputs)
@@ -179,7 +180,7 @@ def make_mnet(input_shape=(32,32), output_channels=2, alpha=1, minimalistic=True
             weights=None, input_tensor=resize, classes=output_channels, pooling=None,
             dropout_rate=dropout_rate, classifier_activation=None,
             include_preprocessing=False)
-    else:
+    else: # multiple channels for dct (32,32,64)
         base_model = MobileNetV3Small(
         input_shape=input_shape, alpha=alpha, minimalistic=minimalistic, include_top=False,
         weights=None, input_tensor=None, classes=output_channels, pooling=None, dropout_rate=dropout_rate,
@@ -213,19 +214,26 @@ def make_cnet(input_shape=(32,32,64), output_channels=1, dropout_rate=0.15):
     """
     inputs = layers.Input(shape=(input_shape))
 
-    # basic convolutional block
-    x = layers.Conv2D(256, (3, 3), activation='relu', padding='same')(inputs)
-    x = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(x)
-    x = layers.MaxPooling2D(pool_size=(2, 2))(x)
+    if len(input_shape) == 2: # single color channel, array of shape ~(256,256)
+        inputs = layers.Input(shape=(input_shape))
+        ninputs = layers.LayerNormalization()(inputs) # mean=0, std=1
+        resize = layers.Reshape((*input_shape,1), name="input_image")(ninputs)
+        x = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(resize)
+    else: # DCT input like (32,32,64)
+        x = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(inputs)
 
-    # bottleneck convolutional block
-    x = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(x)
+    # basic convolutional block
     x = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(x)
     x = layers.MaxPooling2D(pool_size=(2, 2))(x)
 
     # bottleneck convolutional block
     x = layers.Conv2D(32, (3, 3), activation='relu', padding='same')(x)
+    x = layers.Conv2D(32, (3, 3), activation='relu', padding='same')(x)
+    x = layers.MaxPooling2D(pool_size=(2, 2))(x)
+
+    # bottleneck convolutional block
     x = layers.Conv2D(16, (3, 3), activation='relu', padding='same')(x)
+    x = layers.Conv2D(8, (3, 3), activation='relu', padding='same')(x)
     x = layers.MaxPooling2D(pool_size=(2, 2))(x)
 
     # average pool + dropout
@@ -263,10 +271,13 @@ if __name__ == '__main__':
     #perform block DCT
     start = time.time()
     if args.mode == "dct":
-        X = blockDCT(X)
+        X = blockDCT(X) # something like (N, S/8, S/8, 64)
         print("DCT processing time: " + str(time.time()-start))
     else:
-        X = np.expand_dims(X, -1)
+        # X = np.expand_dims(X, -1) # single color channel
+        # don't change dimension from (N, S, S) to (N, S, S, 1)
+        # Normalization Layer doesn't work with channels in image
+        pass
 
     for model_type in ['cnn', 'resnet', 'mobilenet']:
         #build model

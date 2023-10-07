@@ -18,9 +18,9 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-w", '--weights', help='which pretrained weights to use for the network', type=str,
-                         #default="models/cnn_256_spatial_2_2.h5")
-                         #default="models/mobilenet_128_spatial_2_4.h5")
-                         default="models/mobilenet_256_spatial_2_1.h5")
+                         #default="models/mobilenet_256_spatial_2_0.h5")
+                         default="models/mobilenet_128_spatial_2_0.h5")
+                         #default="models/cnn_256_spatial_2_0.h5")
                          #default="models/cnn_256_dct_2_4.h5")
 
     parser.add_argument("-i", "--input", help="HiRISE Image Filepath", type=str,
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         model_fn = make_rnet
 
     if dtype == 'spatial':
-        input_size = (size, size, 1)
+        input_size = (size, size)
     elif dtype == 'dct':
         input_size = (size//8, size//8, 64)
     
