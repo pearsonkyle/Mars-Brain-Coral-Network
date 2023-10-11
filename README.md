@@ -66,7 +66,7 @@ inspect the eval script if you want to use different weights or the dct classifi
 
 remove the `--fast` flag if you want to clean up individual pixel groups in the mask (can take ~1-2 hours to clean)
 
-Various models are available in the `models` directory. The spatial classifier is the fastest and most accurate. The DCT classifier is the fastest but less accurate. The U-net is the slowest but most accurate. The U-net is also the only one that can produce a high resolution mask. The spatial classifier can only produce a low resolution mask. The DCT classifier can produce a low resolution mask but it's not as accurate as the spatial classifier.
+Various models are available in the `models` directory. 
 
 
 | Model               | Train #    | Test # | F1 Score       | TP         | TN             | FP         | FN                   | 1Kx1K / sec |
