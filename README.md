@@ -66,20 +66,23 @@ remove the `--fast` flag if you want to clean up individual pixel groups in the 
 
 Various models are available in the `models` directory. The spatial classifier is the fastest and most accurate. The DCT classifier is the fastest but less accurate. The U-net is the slowest but most accurate. The U-net is also the only one that can produce a high resolution mask. The spatial classifier can only produce a low resolution mask. The DCT classifier can produce a low resolution mask but it's not as accurate as the spatial classifier.
 
-| Model Name             | Training Size | Testing Size | F1 Score | TP    | TN    | FP    | FN    | 1Kx1K / sec |
-|------------------------|---------------|--------------|----------|-------|-------|-------|-------|-------------|
-| unet-512-spatial       | 55872         | 6208         | 0.998    | 99.8  | 0.2   | 99.7  | 0.3   | 6.5         |
-| cnn-256-spatial        | 11493         | 1277         | 0.991    | 99.2  | 99.0  | 1.0   | 0.8   | 23.2        |
-| cnn-128-spatial        | 55872         | 6208         | 0.989    | 99.1  | 98.8  | 1.2   | 0.9   | 26.8        |
-| resnet-128-spatial     | 55872         | 6208         | 0.984    | 96.9  | 100.0 | 0.0   | 3.1   | 35.1        |
-| resnet-256-spatial     | 11493         | 1277         | 0.961    | 93.6  | 98.8  | 1.2   | 6.4   | 38.6        |
-| mobilenet-256-spatial  | 11493         | 1277         | 0.961    | 99.5  | 92.4  | 7.6   | 0.5   | 88.7        |
-| mobilenet-128-spatial  | 55872         | 6208         | 0.957    | 93.8  | 97.7  | 2.3   | 6.2   | 72.9        |
-| cnn-256-dct            | 11493         | 1277         | 0.930    | 90.6  | 95.7  | 4.3   | 9.4   | 95.4        |
-| cnn-128-dct            | 55872         | 6208         | 0.912    | 90.4  | 92.1  | 7.9   | 9.6   | 76.6        |
-| resnet-256-dct         | 11493         | 1277         | 0.844    | 87.3  | 80.5  | 19.5  | 12.7  | 66.5        |
-| mobilenet-256-dct      | 11493         | 1277         | 0.836    | 93.6  | 69.6  | 30.4  | 6.4   | 45.8        |
 
+| Model               | Train #    | Test # | F1 Score       | TP         | TN             | FP         | FN                   | 1Kx1K / sec |
+|---------------------|------------|--------|----------------|------------|----------------|------------|----------------------|-------------|
+| unet-512-spatial    | 58641      | 6516   | 0.998          | 99.8       | 99.7           | 0.2        | 0.3                  | 6.5         |
+| cnn-128-spatial     | 58641      | 6516   | 0.996          | 99.6       | 99.6           | 0.4        | 0.4                  | 33.9        |
+| resnet-128-spatial  | 58641      | 6516   | 0.995          | 99.7       | 99.4           | 0.6        | 0.3                  | 21.7        |
+| cnn-256-spatial     | 11493      | 1277   | 0.991          | 99.2       | 99.0           | 1.0        | 0.8                  | 46.4        |
+| resnet-256-spatial  | 13736      | 1527   | 0.990          | 99.6       | 98.5           | 1.5        | 0.4                  | 35.1        |
+| MobileNet-128-spatial| 58641     | 6516   | 0.988          | 98.6       | 99.0           | 1.0        | 1.4                  | 97.7        |
+| MobileNet-256-spatial| 13736     | 1527   | 0.977          | 96.0       | 99.5           | 0.5        | 4.0                  | 169.0       |
+| cnn-256-dct         | 13736      | 1527   | 0.930          | 90.6       | 95.7           | 4.3        | 9.4                  | 228.4       |
+| cnn-128-dct         | 58641      | 6516   | 0.912          | 90.4       | 92.1           | 7.9        | 9.6                  | 134.2       |
+| resnet-256-dct      | 13736      | 1527   | 0.844          | 87.3       | 80.5           | 19.5       | 12.7                 | 130.0       |
+| MobileNet-256-dct   | 13736      | 1527   | 0.836          | 93.6       | 69.6           | 30.4       | 6.4                  | 159.8       |
+
+
+We recommend using one of the spatial MobileNET models for the classifier and the U-net for segmentation. The spatial classifier is just as fast as the DCT classifier but more accurate. The U-net is the slowest but most accurate.
 
 ## How to create new training data
 
