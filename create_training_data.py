@@ -122,32 +122,34 @@ def create_samples(datadir, size, res=0, disk="/projects/mdap/HiRISE/", preproce
                 maskimg = os.path.join(idir, "training_mask.png")
 
             if len(imgs) == 0:
-                fname = idir.split("/")[-2]
+                # check if windows platform
+                if os.name == 'nt':
+                    fname = idir.split("\\")[-2]
+                else:
+                    fname = idir.split("/")[-2]
+
                 # search HiRISE for image number
                 img_url = get_hirise_image(fname)
 
                 # search for image on disk
-                if os.path.exists(os.path.join(disk, img_url.split("ESP/")[-1])): # TODO what about PSP images?
-                    ainput = os.path.join(disk, img_url.split("ESP/")[-1])
-                    print('image found on disk')
-                else:
-                    file_name = os.path.join(cdir, fname, f"{fname}_RED.JP2")
-                    if not os.path.exists(file_name):
+                file_name = os.path.join(cdir, fname, f"{fname}_RED.JP2")
+                if not os.path.exists(file_name):
 
-                        try:
-                            site = urllib.request.urlopen(img_url)
-                        except:
-                            continue
-                        fsize = site.length/1024/1024
-                        print(f"downloading {fsize:.1f} mb from:")
-                        print(f" {img_url}")
+                    try:
+                        site = urllib.request.urlopen(img_url)
+                    except:
+                        continue
+                    fsize = site.length/1024/1024
+                    print(f"downloading {fsize:.1f} mb from:")
+                    print(f" {img_url}")
 
-                        try:
-                            urllib.request.urlretrieve(img_url, file_name)
-                        except:
-                            urllib.request.urlretrieve(img_url, file_name)
+                    try:
+                        urllib.request.urlretrieve(img_url, file_name)
+                    except:
+                        urllib.request.urlretrieve(img_url, file_name)
 
-                    ainput = file_name
+                # rename file to match other images
+                ainput = file_name
             else:
                 ainput = imgs[0]
 

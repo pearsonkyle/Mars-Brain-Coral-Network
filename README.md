@@ -19,6 +19,7 @@ Dobrea et al. 2007
 
 Set up a conda environment with the following dependencies:
 
+**DCT Dependencies**
 ```
 conda create -n mdap python=3.9
 conda activate mdap
@@ -26,18 +27,25 @@ conda install -c conda-forge tensorflow-gpu==2.6.0 pyturbojpeg matplotlib
 pip install numpy==1.20.0 opencv-python scikit-learn scikit-image==0.19.0 seaborn glymur beautifulsoup4 tqdm jpeg2dct==0.2.3
 ```
 
-The dependencies can get rather particular if you want to use the DCT version of each classifier. Otherwise, anything over tensorflow > 2.6.0 should work for the spatial classifier and U-net.
+The dependencies can get rather particular if you want to use the DCT classifier. Otherwise, we recommend using a newer version of tensorflow (> 2.6) which will allow you to use the MobileNETv3 Classifier, it's just as fast and more accurate. The architecture changed for MobileNET after 2.6 so the model weights won't load on any older versions. The DCT classifier is still available in the `models/` directory if you want to use it.
 
-MAC silicon:
+**MAC silicon:**
 ```
 conda create -n mdap python=3.11
 conda activate mdap
 conda install -c conda-forge glymur
-pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm tensorflow matplotlib
+pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib tensorflow
 pip install tensorflow-metal
 ```
 
-No gaurentees the dct classifier will work on MAC but the mobileNET classifier should be just as fast and more accurate + the segmentation network works.
+**Windows:**
+```
+conda create -n mdap python=3.10
+conda activate mdap
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 glymur
+python -m pip install "tensorflow<2.11"
+pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib
+```
 
 ## Searching for Brain Coral
 1. Navigate to the [HiRISE Catalog](https://www.uahirise.org/catalog/) and download a JP2 image. Please use the JP2 Map-projected Black + White image. These will typically range in size from ~100-1000 MB

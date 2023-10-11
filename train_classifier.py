@@ -22,14 +22,13 @@ from create_training_data import create_samples
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("-m", "--mode", help="'spatial' for spatial and 'dct' for frequency domain", type=str, default="dct")
+    parser.add_argument("-m", "--mode", help="'spatial' for spatial and 'dct' for frequency domain", type=str, default="spatial")
 
     parser.add_argument("-s", "--size", help="Segmentation input size [px] -> S x S", type=int, default=256)
 
-    parser.add_argument("-r", "--res", help="resolution to decode JPEG2000 files at (0 is highest)", type=int,
-                        default=2)
+    parser.add_argument("-r", "--res", help="resolution to decode JPEG2000 files at (0 is highest)", type=int, default=2)
 
-    parser.add_argument("-d", "--data", help="Directory of training data", type=str, default="training/")
+    parser.add_argument("-d", "--data", help="Directory of training data", type=str, default="D:/MDAP/training")
     
     parser.add_argument("-e", "--epochs", help="Number of training epochs", type=int, default=10)
 
@@ -279,7 +278,7 @@ if __name__ == '__main__':
         # Normalization Layer doesn't work with channels in image
         pass
 
-    for model_type in ['cnn', 'resnet', 'mobilenet']:
+    for model_type in ['mobilenet', 'cnn', 'resnet']:
         #build model
         if model_type == "resnet":
             model = make_rnet(X[0].shape, len(classes))
@@ -316,7 +315,7 @@ if __name__ == '__main__':
                 # batch data even more to avoid overloading GPU
                 for i in range(0, len(X_train), chunksize):
                     chunk = slice(i,i + chunksize)
-                
+
                     history = model.fit(X_train[chunk], y_train[chunk], 
                                     validation_data=(X_test, y_test), shuffle=True,
                                     batch_size=args.batch_size, epochs=1, verbose=args.verbose)
@@ -326,7 +325,6 @@ if __name__ == '__main__':
 
                 # clean up memory
                 _ = gc.collect()
-        
 
         #evaluate and plot
         start = time.time()
