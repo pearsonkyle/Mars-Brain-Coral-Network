@@ -9,7 +9,7 @@ One of the key drivers of the Mars Exploration Program is the search for evidenc
 
 ![](figures/mdap_example.png)
 
-Dobrea et al. 2007
+[Dobrea et al. 2007](https://ui.adsabs.harvard.edu/abs/2007LPICo1353.3358N/abstract)
 
 ## Data
 
@@ -18,16 +18,6 @@ Dobrea et al. 2007
 ## Getting Started
 
 Set up a conda environment with the following dependencies:
-
-**DCT Dependencies**
-```
-conda create -n mdap python=3.9
-conda activate mdap
-conda install -c conda-forge tensorflow-gpu==2.6.0 pyturbojpeg matplotlib
-pip install numpy==1.20.0 opencv-python scikit-learn scikit-image==0.19.0 seaborn glymur beautifulsoup4 tqdm jpeg2dct==0.2.3
-```
-
-The dependencies can get rather particular if you want to use the DCT classifier. Otherwise, we recommend using a newer version of tensorflow (> 2.6) which will allow you to use the MobileNETv3 Classifier, it's just as fast and more accurate. The architecture changed for MobileNET after 2.6 so the model weights won't load on any older versions. The DCT classifier is still available in the `models/` directory if you want to use it.
 
 **MAC silicon:**
 ```
@@ -46,6 +36,18 @@ conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 glymur
 python -m pip install "tensorflow<2.11"
 pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib
 ```
+
+
+**DCT Dependencies (Linux/Mac only)**
+
+```
+conda create -n mdap python=3.9
+conda activate mdap
+conda install -c conda-forge tensorflow-gpu==2.6.0 pyturbojpeg matplotlib
+pip install numpy==1.20.0 opencv-python scikit-learn scikit-image==0.19.0 seaborn glymur beautifulsoup4 tqdm jpeg2dct==0.2.3
+```
+
+The dependencies can get rather particular if you want to use the DCT classifier. Otherwise, we recommend using a newer version of tensorflow (> 2.6) which will allow you to use the MobileNETv3 Classifier, it's just as fast and more accurate. The architecture changed for MobileNET after 2.6 so the model weights won't load on any older versions of tf. The DCT classifier is still available in the `models/` directory if you want to use it.
 
 ## Searching for Brain Coral
 1. Navigate to the [HiRISE Catalog](https://www.uahirise.org/catalog/) and download a JP2 image. Please use the JP2 Map-projected Black + White image. These will typically range in size from ~100-1000 MB
@@ -74,19 +76,18 @@ Various models are available in the `models` directory. The spatial classifier i
 | resnet-128-spatial  | 58641      | 6516   | 0.995          | 99.7       | 99.4           | 0.6        | 0.3                  | 21.7        |
 | cnn-256-spatial     | 11493      | 1277   | 0.991          | 99.2       | 99.0           | 1.0        | 0.8                  | 46.4        |
 | resnet-256-spatial  | 13736      | 1527   | 0.990          | 99.6       | 98.5           | 1.5        | 0.4                  | 35.1        |
-| MobileNet-128-spatial| 58641     | 6516   | 0.988          | 98.6       | 99.0           | 1.0        | 1.4                  | 97.7        |
+| **MobileNet-128-spatial**| 58641     | 6516   | 0.988          | 98.6       | 99.0           | 1.0        | 1.4                  | 97.7        |
 | MobileNet-256-spatial| 13736     | 1527   | 0.977          | 96.0       | 99.5           | 0.5        | 4.0                  | 169.0       |
 | cnn-256-dct         | 13736      | 1527   | 0.930          | 90.6       | 95.7           | 4.3        | 9.4                  | 228.4       |
 | cnn-128-dct         | 58641      | 6516   | 0.912          | 90.4       | 92.1           | 7.9        | 9.6                  | 134.2       |
 | resnet-256-dct      | 13736      | 1527   | 0.844          | 87.3       | 80.5           | 19.5       | 12.7                 | 130.0       |
 | MobileNet-256-dct   | 13736      | 1527   | 0.836          | 93.6       | 69.6           | 30.4       | 6.4                  | 159.8       |
 
-
-We recommend using one of the spatial MobileNET models for the classifier and the U-net for segmentation. The spatial classifier is just as fast as the DCT classifier but more accurate. The U-net is the slowest but most accurate.
+We recommend using one of the spatial MobileNET models for the classifier and the U-net for segmentation. The MobileNET classifier is more accurate than the DCT classifier but at the expense of being a 2x as slow. We argue MobileNET is a bit more robust due to the additional training data when using a smaller window size. Inference on a typical HiRISE image will take a few seconds with the MobileNET classifier (assuming you're using a GPU). The biggest bottleneck is usually downloading + opening the image (it's best to use multi-threading when decoding).
 
 ## How to create new training data
 
-This repository already comes with lots of hirise images to identify multiple classes: 16 brain coral images and 130 background images. The training data is located in: `training/data` with directories pertaining to the classes used in the prediction algorithm. Masks identifying brain coral can be made by hand in photoshop or gimp. Below is a mosaic of tiles representing images correspoding to brain coral. Each tile is 512 x 512 pixels at the 0.25cm/px resolution.
+This repository already comes with lots of hirise images to identify multiple classes: 20 brain coral images and 129 background images. The training data is located in: `training/data` with directories pertaining to the classes used in the prediction algorithm. Masks identifying brain coral can be made by hand in photoshop or gimp. Below is a mosaic of tiles representing images correspoding to brain coral. Each tile is 512 x 512 pixels at the 0.25cm/px resolution.
 
 ![](figures/brain_coral_training.png)
 
@@ -117,7 +118,7 @@ Training data will be downloaded in that script if it's not found on disk. We al
 - Input: 256x256x1
 - Output: 2 (classes=background, brain_coral)
 
-`python train_classifier.py --mode spatial --threads 8 --epochs 10 --res 2 --gpu 3`
+`python train_classifier.py --mode spatial --threads 8 --epochs 10 --res 2 --gpu 0`
 
 Each of these training scripts will create three different classifiers: a vanilla CNN, one using MobileNetV3Small and ResNet. 
 
