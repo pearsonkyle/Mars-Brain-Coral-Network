@@ -127,6 +127,12 @@ def find_links(URL, pattern="", full=True):
     return list(set(urls))
 
 def hiriseLinkGenerator(base_url, pattern="RED.QLOOK.JP2", order=1):
+
+    if "ESP" in base_url:
+        dl_url = "https://hirise-pds.lpl.arizona.edu/download/PDS/RDR/ESP"
+    else:
+        dl_url = "https://hirise-pds.lpl.arizona.edu/download/PDS/RDR/PSP"
+
     # for finding files online
     links = find_links(base_url)
     for l,link in enumerate(links[::order]):
@@ -134,7 +140,13 @@ def hiriseLinkGenerator(base_url, pattern="RED.QLOOK.JP2", order=1):
         for ol, olink in enumerate(olinks[::order]):
             dlinks = find_links(olink, pattern=pattern)
             for dl, dlink in enumerate(dlinks):
-                yield dlink
+                # transform to full_url, QLOOK isn't same resolution as full image
+                if "ESP" in base_url:
+                    full_url = dl_url + dlink.split("https://hirise-pds.lpl.arizona.edu/PDS/EXTRAS/RDR/ESP")[1].replace(".QLOOK.JP2", ".JP2")
+                else:
+                    full_url = dl_url + dlink.split("https://hirise-pds.lpl.arizona.edu/PDS/EXTRAS/RDR/PSP")[1].replace(".QLOOK.JP2", ".JP2")
+
+                yield full_url
 
 def find_files(base_dir, pattern="*/"):
     # for scraping files online
@@ -150,7 +162,7 @@ def hiriseFileGenerator(base_dir, pattern="*RED*.JP2", order=1):
             for dl, dlink in enumerate(dlinks):
                 yield dlink
 
-def hiriseScratchGenerator(base_dir, pattern="*RED*.JP2", order=1):
+def hiriseLocalGenerator(base_dir, pattern="*RED*.JP2", order=1):
     # for finding files on scratch volume
     links = find_files(base_dir)
     for l,link in enumerate(links[::order]):

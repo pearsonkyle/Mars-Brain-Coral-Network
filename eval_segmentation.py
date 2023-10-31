@@ -35,6 +35,8 @@ def parse_args():
 
     parser.add_argument("--gpu", default=0, type=int, help='specify which gpu to use')
 
+    parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
+
     return parser.parse_args()
 
 
@@ -120,9 +122,9 @@ if __name__ == "__main__":
         # predict
         if args.lowmem:
             # cast to float16 to save memory, will be slower
-            pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=1).astype(np.float16)
+            pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=args.verbose).astype(np.float16)
         else:
-            pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=1)
+            pred[sub] = segmentor.predict(BIR[sub], batch_size=8, verbose=args.verbose)
 
         # clean up memory for really large images
         if BIR.shape[0] > batch and i%batch == 0:

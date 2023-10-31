@@ -104,5 +104,5 @@ if __name__ == "__main__":
 
     # save mask using cv2
     maskfile = os.path.splitext(args.input)[0] + "_classifier_mask.png"
-    print("saving mask to", maskfile)
     cv2.imwrite(maskfile, mask.astype(np.uint8)*255)
+    print("saving mask to", maskfile)
