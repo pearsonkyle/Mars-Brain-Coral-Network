@@ -6,5 +6,3 @@ output/*/*.jp2
 */*.DS_Store
 *.DS_Store
 *.pdf
-output/
-mask.png
