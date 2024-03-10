@@ -27,8 +27,8 @@ Set up a conda environment with the following dependencies:
 conda create -n mdap python=3.11
 conda activate mdap
 conda install -c conda-forge glymur
-pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib tensorflow
-pip install tensorflow-metal
+pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib tensorflow bokeh==2.4.3
+pip install tensorflow-metal 
 ```
 
 **Windows:**
@@ -37,7 +37,7 @@ conda create -n mdap python=3.10
 conda activate mdap
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 glymur
 python -m pip install "tensorflow<2.11"
-pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib
+pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib bokeh==2.4.3
 ```
 
 
@@ -47,7 +47,7 @@ pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4
 conda create -n mdap python=3.9
 conda activate mdap
 conda install -c conda-forge tensorflow-gpu==2.6.0 pyturbojpeg matplotlib
-pip install numpy==1.20.0 opencv-python scikit-learn scikit-image==0.19.0 seaborn glymur beautifulsoup4 tqdm jpeg2dct==0.2.3
+pip install numpy==1.20.0 opencv-python scikit-learn scikit-image==0.19.0 seaborn glymur beautifulsoup4 tqdm jpeg2dct==0.2.3 bokeh==2.4.3
 ```
 
 The dependencies can get rather particular if you want to use the DCT classifier. Otherwise, we recommend using a newer version of tensorflow (> 2.6) which will allow you to use the MobileNETv3 Classifier, it's just as fast and more accurate. The architecture changed for MobileNET after 2.6 so the model weights won't load on any older versions of tf. The DCT classifier is still available in the `models/` directory if you want to use it.
