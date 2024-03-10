@@ -1,0 +1,453 @@
+name,title,comment,commenter,lat,lon,percent,resolution
+ESP_011428_2200,Candidate new impact site formed between January,Partially,Alex,39.546458,190.047263,6.01,0.25
+ESP_011442_2255,Possible new impact site,no - image artifact,Kyle,45.045421,164.704997,4.26,0.25
+ESP_011563_2200,Very fresh 1-km impact crater,no - ejecta,Kyle,39.7082691,104.117357,4.06,0.25
+ESP_011571_2270,Very fresh small impact crater,no,Kyle,46.4575236,244.946163,10.91,0.25
+ESP_011592_2210,Central uplift of large crater,maybe - degraded?,Alex,40.718036,31.731572,5.1,0.5
+ESP_013160_2135,Lineated valley fill in Nilosyrtis Mensae,no,Kyle,33.0208164,68.2573205,3.35,0.5
+ESP_013267_2085,Re-image very recent impact and dark spot,no,Kyle,28.4352324,25.2064522,17.11,0.25
+ESP_013477_2120,Crater rim in Nilosyrtis region,No. But good example on how the high latitutde mantling deposit is sublimating,Eldar,31.841421,51.4551198,6.84,0.25
+ESP_013793_2140,Lineated valley fill and nearby concentric crater,no,Alex,33.5342093,63.5612898,5.24,0.25
+ESP_014307_2130,Lineated valley fill in Nilosyrtis region,maybe,Kyle,32.477022,70.8840749,7.05,0.25
+ESP_015944_2225,North Arabia Terra monitoring site,maybe,Alex,42.2207056,18.3966366,10.87,0.25
+ESP_015956_2210,Protonilus Mensae fretted terrain in northern,yes,Alex,40.6824001,51.2454607,13.29,0.25
+ESP_016102_2160,Possible phyllosilicate-rich terrain,yes,Alex,35.4734513,26.3093439,2.05,0.25
+ESP_016103_1435,Rim of a crater in Noachis Terra,Yes,Alex,-36.435966,8.49612292,4.8,0.25
+ESP_016128_2180,Crater in Terra Sabaea,maybe,Kyle,37.6186135,36.5726906,10.48,0.25
+ESP_016155_2155,Crater in Arabia Terra,maybe,Alex,34.9516852,20.5070701,8.7,0.25
+ESP_016180_2225,Northern plains transition area in Protonilus and,yes,Eldar,42.1921783,56.0168839,12.15,0.5
+ESP_016181_2105,Crater,yes. Similar to the original crater,Eldar,30.2152265,30.6044527,5.76,0.5
+ESP_016287_2205,Lineated valley floor material in terrain north,yes,Eldar,40.0463596,15.5234734,40.91,0.25
+ESP_016318_2250,Alba Mons graben,no,Eldar,44.4202678,247.359969,5.15,0.25
+ESP_016338_2150,Crater in Terra Sabaea,maybe very eroded in some parts,Kyle,34.8164306,62.9948498,2.16,0.25
+ESP_016391_2195,Fretted valley outlet,maybe. Very degraded,Alex,38.9698112,56.1109951,6.86,0.25
+ESP_016682_2160,Craters,no,Kyle,35.5018361,32.7377649,3.54,0.25
+ESP_016765_2270,Traverse of valley in Tempe Terra,no,Kyle,46.8935266,284.331603,20.92,0.25
+ESP_016782_2205,Northern plains west of Erebus Montes,yes,Eldar,40.066425,182.355508,26.46,0.25
+ESP_016801_2205,Aprons and adjacent terrain in Deuteronilus,yes,Eldar,40.2830803,21.9839174,33.7,0.25
+ESP_017085_2200,Erebus Montes terrain,no,Alex,39.7876144,189.677615,3.42,0.25
+ESP_017169_2235,Protonilus fretted terrain in northern plains,yes,Kyle,43.0411238,54.1473119,10.51,0.25
+ESP_017231_2160,Possible fan deposit in Phlegra Montes,yes,Alex,35.77273,163.524923,10.74,0.5
+ESP_017798_2160,Apron in Phlegra Montes,no,Kyle,35.5717106,163.868885,62.01,0.25
+ESP_017929_2215,Terrain north of Erebus Montes,maybe - lots of short split ridges (Alex: I'd say yes),Eldar (Alex),40.9993853,186.546588,18.91,0.25
+ESP_018097_2190,Candidate new impact site formed between March,no,Kyle,38.6204875,280.252513,3.24,0.25
+ESP_018515_2225,Lobate apron embaying craters in the Deuteronilus,maybe - lots of split ridges but they are pretty linear,Alex,42.1318729,27.3456703,2.86,0.25
+ESP_018707_2205,Candidate new impact site formed between January,yes,Alex,40.3165607,185.5077,58.5,0.25
+ESP_018725_2215,Dissected mantle and lineated valley fill,yes,Eldar,41.0088493,54.6256173,6.23,0.25
+ESP_018831_2255,Deuteronilus Mensae debris aprons,maybe - degraded,Alex,45.1097559,39.7575268,2.18,0.5
+ESP_018856_2185,Well developed hollows and ridges in Nilosyrtis,no,Alex,37.9872599,75.6055209,12.35,0.25
+ESP_018857_2225,Possible glacier on mesa wall in Protonilus,yes but not everywhere that it thinks,Eldar,42.2129664,50.5250403,12,0.25
+ESP_018936_2210,Protonilus Mensae dichotomy boundary scarp or,maybe,Alex,40.7417553,52.073897,4.7,0.25
+ESP_019018_2210,Mounds with flows in Acidalia Planitia,no,Kyle,40.6429231,332.331078,7.43,0.25
+ESP_019094_2255,Banded massif,yes,Alex,44.9337967,59.7434515,3.77,0.25
+ESP_019122_2205,Lineated valley floor material in terrain north,yes,Eldar,40.4288343,15.4667071,27.43,0.25
+ESP_019173_2255,Banded massif,"maybe (Alex: definitely yes for some samples, but no for others)",Kyle (Alex),44.9604432,59.7332832,6.98,0.25
+ESP_019213_2210,Debris flow,no,Alex,40.8681441,51.3936849,6.8,0.25
+ESP_019266_2240,Massif in Protonilus Mensae,yes. Some thick brain coral inside small cratert with mantle may be a good example of pre-existing brain coral,Eldar,43.8552806,42.3497307,8.12,0.25
+ESP_019284_2220,Terrain northwest of Tanais Fossae,no (or maybe very degraded),Alex,41.6746624,271.808088,3.87,0.25
+ESP_019354_2170,Apron in Phlegra Montes,maybe,Alex,36.6131366,162.264932,32.08,0.25
+ESP_019358_2225,Possible glacier on mesa wall in Protonilus,yes,Alex,42.2134629,50.5258524,12.21,0.25
+ESP_019359_2200,North Arabia Terra monitoring site,yes,Eldar,39.7567802,24.330219,50.18,0.25
+ESP_019385_2210,Lineated valley floor material in terrain north,yes,Eldar,40.6642028,34.6573853,65.66,0.5
+ESP_019503_2210,Debris flow,no,Alex,40.8610182,51.3976378,3.56,0.25
+ESP_019555_2130,Nilosyrtis Mensae fretted terrain northern plains,no,Alex,32.432705,73.8208876,4.41,0.25
+ESP_019600_2270,Terraced valley wall and valley fill,no,Alex,46.7126342,283.910056,11.59,0.25
+ESP_019637_1790,Stratigraphic relations in MOC image M00-02426 in,no (looks aeolian),Alex,-0.7773427,1.736429,2.84,0.25
+ESP_019710_1775,Contact between mesas and lava plains,no (looks aeolian),Alex,-2.274476,167.581528,4.05,0.25
+ESP_019768_2220,Lobate debris apron,maybe - could provide insight into formation,Eldar,41.5890498,18.4233034,26.14,0.25
+ESP_019780_2205,Viscous flow feature,no,Alex,40.3852732,49.0716262,2.33,0.25
+ESP_019794_2240,Central lobate debris apron in Deuteronilus,yes,Alex,43.7317714,28.1247556,9.73,0.25
+ESP_019938_2135,Arcuate ridges and landforms,no,Alex,33.1081005,60.3971696,5.59,0.5
+ESP_020052_2205,Candidate new impact site formed between January,yes,Eldar,40.3168549,185.507779,40.45,0.25
+ESP_020070_2240,Lines of pits in crater in Protonilus Mensae,Partially,Alex,43.6483194,53.4617886,5.52,0.25
+ESP_020188_2130,Lineated valley fill in Nilosyrtis region,no,Alex,32.4763449,70.8806949,24.39,0.25
+ESP_020203_2180,Valleys in Arabia Terra,yes,Alex,37.4934487,24.1300067,10.65,0.5
+ESP_020558_2215,Debris Flow,Mostly,Alex,41.1734828,50.8709265,4.15,0.25
+ESP_020597_2135,Lineated valley fill in Nilosyrtis Mensae,no,Kyle,33.071712,68.5532242,4.06,0.5
+ESP_020663_2180,Crater with arcuate-ridged interior material,partially,Alex,37.6989755,64.2742322,6.04,0.5
+ESP_020769_2225,Flow feature on a mound in Protonilus Mensae,yes,Alex,41.9334212,50.1600239,10.73,0.25
+output/ESP_020855_1435/mosaic_numbers.jpg,0.25,maybe - bottom of image,very eroded,output/ESP_020855_1435/image_inverted.jpg,-36.234127,ESP_020855_1435,5.19
+ESP_022629_2170,Lobate deposits in crater in Arabia Terra,yes,Eldar,36.6145532,30.1215759,76.59,0.25
+output/ESP_022642_2160/mosaic_numbers.jpg,0.5,No. This is not brain coral (Alex: I would have put 'yes'),although it kinda looks like it. What is morphologically distinguishable between this and brain coral?,output/ESP_022642_2160/image_inverted.jpg,35.4283638,ESP_022642_2160,28.9
+ESP_023552_2245,Deuteronilus Mensae,(no samples identified)44.1079021,28.6324599,2.8,0.25
+ESP_023605_2205,Flow feature with crevasses and evidence of,yes,Alex,39.9293185,22.3819113,4.98,0.25
+ESP_023617_2190,Valley wall and floor contact,partially,Alex,38.7088653,56.1838389,15.21,0.25
+ESP_023815_2215,Brain terrain between two mounds east of Moreux,maybe on border of region,Kyle,41.3435041,48.8976741,47.43,0.25
+ESP_023816_2135,Ice-rich fill deposits on Cerulli Crater ejecta,no,Alex,33.1772104,21.5944778,2.48,0.25
+ESP_023817_1800,Meridiani Planum,no (looks aeolian),Alex,0.10094072,-0.0794582,5,0.5
+ESP_024380_1420,Tongue-shaped flow feature on mound in Terra,yes,Alex,-37.664761,115.744661,2.69,0.25
+ESP_024473_2205,Crater features,yes,Kyle,40.0361821,86.9141364,3.28,0.25
+ESP_025029_2210,Flow obstruction,yes,Alex,40.7369513,25.6274156,3.18,0.25
+ESP_025280_2155,Channel in Mamers Valles crater with potential,yes but not everywhere that it thinks,Eldar,35.1195034,13.9974527,12.55,0.25
+ESP_025938_2230,Ridge features,yes,Eldar,42.4068361,49.4151226,7,0.25
+ESP_026071_2195,Flow features in Mamers Valles,yes,Eldar,39.3638908,19.3268249,7.78,0.25
+ESP_026223_2185,Pit or crater in icy fill material,yes,Alex,38.4015394,189.148747,2.88,0.25
+ESP_026414_2205,Lineated valley floor material in terrain north,yes,Kyle,40.2534222,15.5006863,23.82,0.25
+ESP_026447_2200,Pits on aprons of Erebus Montes,partially,Alex,39.5906315,193.876582,5.62,0.25
+ESP_026732_2215,Northern plains cratered cones in Acidalia,no,Kyle,41.1593854,333.711043,11.3,0.25
+ESP_026912_2260,Terrain with layered material and circular pits,no,Kyle,45.6303079,98.0402025,2.41,0.25
+ESP_026951_2200,Fresh crater,no,Kyle,39.727797,113.857144,14.61,0.25
+ESP_026994_2180,Valleys in Arabia Terra,yes,Alex,37.4923912,24.1290107,5.17,0.5
+ESP_027262_2250,Crater,no,Kyle,44.6749354,264.451981,35.62,0.25
+ESP_027431_2215,Northern plains cratered cones in Acidalia,no,Kyle,41.1635514,333.713485,10.9,0.25
+ESP_027434_2250,Double graben on Alba Mons,no,Kyle,44.8306259,248.502503,16.7,0.25
+ESP_027494_2215,Flow feature in Protonilus Mensae,no,Kyle,41.2241514,50.7776919,3.69,0.25
+ESP_027508_2245,Deuteronilus Mensae lobate debris apron,yes,Eldar,44.175092,28.3034684,3.96,0.25
+ESP_027639_2210,Flows on mesa wall in Protonilus Mensae,yes,Eldar,40.6623154,53.8633396,13.93,0.25
+ESP_027821_2245,Well-preserved impact crater,maybe,Kyle,43.9156288,124.76863,8.39,0.25
+ESP_028113_2195,Mid-latitude crater with rayed ejecta,no,Kyle,39.3792059,75.2120725,3.86,0.25
+ESP_028115_2225,Debris aprons in Arabia Terra,yes,Eldar,42.5880387,18.3325038,12.05,0.25
+ESP_028246_2090,Intersection of valley with layered plains,no but good example of deflationary terrain mimicking brain coral,Eldar,28.5404257,45.1872163,19.59,0.25
+ESP_028287_2205,Central peaks of an impact crater,yes,Alex,40.0561376,5.15335379,2.38,0.25
+ESP_028431_2110,Monitor impact site for changes,no,Alex,30.8636974,34.487528,2.05,0.25
+ESP_028469_2195,Mid-latitude crater with rayed ejecta,mostly no,Alex,39.3815037,75.2131445,3.59,0.25
+ESP_028488_2265,Escarpment at northern end of Tempe Terra,yes,Alex,45.9945377,275.876066,2.91,0.5
+ESP_028531_2205,Northern plains west of Erebus Montes,maybe,Kyle,40.0688551,182.354651,23.61,0.25
+ESP_028602_2260,Well-preserved 500-m impact crater,partially,Alex,45.6619064,45.1704113,14.28,0.25
+ESP_028609_1820,Small crater with bright layer in wall,No,Eldar,2.14200301,219.890289,14.88,0.25
+ESP_028615_2220,Lineated and flowing terrain in Protonilus,Yes,Alex,41.9249891,50.0469608,24.95,0.5
+ESP_028622_2155,Ridges along valley walls in Diacria region,no,Kyle,35.0896273,219.111795,9.11,0.25
+ESP_028652_2210,Viscous flow features in Kufra Crater,maybe,Kyle,40.1119677,120.343135,9.49,0.25
+ESP_028721_2225,Surface flow features in Deuteronilus Mensae,yes,Eldar,42.2345139,35.3771903,22.59,0.5
+ESP_028800_2205,Sample of fretted terrain in west Protonilus,yes,Alex,40.2660481,38.6258279,8.87,0.5
+ESP_028976_2245,Faulted plains in Tempe Terra,maybe,Alex,44.337802,273.678318,5.67,0.5
+ESP_028993_2085,Flow boundary in Elysium Planitia,no,Alex,28.3528914,172.442707,9.47,0.25
+ESP_029022_1440,Crater surfaces in Promethei Terra,Yes,Alex,-35.555956,108.920998,2.18,0.25
+ESP_029042_2180,Sinuous ridges in association with degraded,no,Alex,37.4545047,273.488354,10.17,0.25
+ESP_029045_2200,Monitoring new impact site,maybe,Kyle,39.5546806,190.047846,4.29,0.25
+ESP_029230_2190,Erebus Montes terrain sample,maybe - eroded?,Kyle,38.6557131,180.109013,12.6,0.25
+ESP_029328_2200,Fretted terrain valley,yes,Eldar,39.4905971,25.2992829,18.6,0.25
+ESP_029354_2175,Flow patterns on valley floor,yes,Eldar,37.2093381,34.8065557,19.1,0.25
+ESP_029895_2085,Monitoring new impact site,no,Kyle,28.4428448,25.198241,2.02,0.25
+ESP_030541_2185,Floor of oblong depression,yes - fine scale on border of mask,Kyle,38.1342217,26.3804644,16.33,0.25
+ESP_032458_1395,Fresh crater,no,Kyle,-40.281475,259.382578,11.37,0.25
+ESP_032743_2205,Valley headwalls,yes,Alex,40.0413604,26.1192674,3.19,0.25
+ESP_032875_2195,Viscous Flow,yes,Eldar,39.3436409,24.7160405,14.35,0.25
+ESP_032888_2205,Valley headwalls,y,Alex,40.0346337,26.1199536,8.16,0.25
+ESP_033165_2195,Viscous flow,yes,Eldar,39.3473659,24.7139753,21.47,0.25
+ESP_033363_2225,Ice-rich lobate debris apron,maybe,Kyle,42.0865605,18.5075198,15.22,0.25
+ESP_033653_2225,Ice-rich lobate debris apron,maybe,Kyle,42.0915947,18.5073982,16.29,0.25
+ESP_034439_2160,Apron in Phlegra Montes,no,Kyle,35.1207595,163.934845,17.94,0.5
+ESP_034503_2350,Floor of Milankovic Crater,no,Kyle,54.4500171,214.221357,2.68,0.25
+ESP_034694_2210,Lineated valley floor material in terrain north,yes,Eldar,40.3521118,42.0477058,23.46,0.5
+ESP_034768_2210,Terrain west of Erebus Montes,maybe - lots of short split ridges,Eldar,40.6440535,181.460288,20,0.25
+ESP_034956_2235,Thermophysical contrasts in Utopia Planitia,no,Alex,43.1612935,88.1920588,10.19,0.25
+ESP_035090_2240,Apron material in Deuteronilus region,"maybe (Alex: definitely yes for some samples, but no for others)",Kyle (Alex),43.8160906,28.3688436,6.34,0.25
+ESP_035341_2195,Crater on wall in Mamers Valles,yes. examples of transition from fine to thick,Eldar,39.3543595,16.4858542,16.85,0.25
+ESP_035523_2205,Mid-latitude crater,yes but this may be old and degraded,Eldar,40.0465888,87.0164127,26.56,0.25
+ESP_035643_2215,Flow feature in Protonilus Mensae,yes - examples of deflationary evolution?,Eldar,40.8142452,50.9606649,13,0.25
+ESP_035684_2160,Layered features in Arabia Terra,yes,Eldar,35.8891845,12.856807,21.69,0.25
+ESP_035697_2195,Terraced mesas in Mamers Valles,yes,Eldar,39.2456103,16.8566085,11.92,0.25
+ESP_035763_2195,Terraced mesas in Mamers Valles,yes,Eldar,39.237016,16.8597249,7.51,0.25
+ESP_035934_2215,Flows in fretted terrain,maybe,Kyle,41.3391259,28.4976246,14.5,0.25
+ESP_036126_2205,Monitoring new impact site,yes,Eldar,40.3259253,185.51035,40.93,0.25
+ESP_036183_2220,Nilosyrtis region crater floor,yes - knobby examples of deflationary evolution?,Eldar,41.8205667,69.9952627,11.58,0.25
+ESP_036235_2170,Crater with steep slopes,no,Kyle,36.5984359,90.8454568,25.1,0.25
+ESP_036245_2215,Small well-preserved impact crater,maybe,Kyle,41.0889832,176.922275,7.65,0.25
+ESP_036475_2225,Lobate debris apron surface,yes,Eldar,41.8408077,18.4585175,20.26,0.25
+ESP_036528_2145,Cratered terrain in Arabia Terra,yes,Eldar,34.2304781,13.0401847,8.03,0.25
+ESP_036567_2235,Deuteronilus Mensae contact,maybe in the very bottom of the image,Alex,42.9591884,26.8944065,2.21,0.25
+ESP_036615_2150,Flows on crater floor,yes,Eldar,34.8062002,158.029656,6.59,0.25
+ESP_036759_2170,Sharp crater,no,Alex,36.4396528,185.152991,15.46,0.25
+ESP_036884_2175,Evidence of ice and rock in crater near side,yes but not everywhere that it thinks,Eldar,37.1207542,15.1497438,11.67,0.25
+output/ESP_036917_2210/mosaic_numbers.jpg,0.25,yes. Also really large fractured mound!output/ESP_036917_2210/image_inverted.jpg,40.5190586,ESP_036917_2210,41.46
+ESP_036940_2270,Contact,no,Alex,46.8184375,281.983697,10.32,0.25
+ESP_036949_2255,Mass movement of material on mesa in Deuteronilus,no,Kyle,45.0909854,37.4090661,12.27,0.25
+ESP_037054_2225,Lobate apron feature in Protonilus Mensae,yes,Eldar,42.7158218,50.4469468,13.3,0.25
+ESP_037147_2200,Fretted terrain valley boundary,Partially,Alex,39.583542,32.1011215,4.88,0.25
+ESP_037234_2240,Mound and trough system in Arcadia Planitia,maybe - but eroded,Kyle,43.6776682,176.554316,2.73,0.25
+ESP_037247_2160,Relaxed crater,Yes,Alex,35.5054628,181.78347,2.89,0.25
+ESP_037292_2175,Striated flows in canyon,maybe,Kyle,37.2119562,33.2599289,22.45,0.25
+ESP_037337_2075,Monitoring new impact site,(no samples identified)27.0374872,245.374798,2.21,0.25
+ESP_037529_2085,Intersection of valley with layered plains,yes but not everywhere that it thinks,Alex,28.2353326,45.4938753,2.16,0.5
+ESP_037556_2245,Surfaces of lobate debris apron in Deuteronilus,yes but not everywhere that it thinks,Alex,44.0679901,25.6495623,3.06,0.25
+ESP_037576_1980,Margin of lava flow intersecting pit-chain graben,no,Alex,17.6655513,202.94061,2.86,0.5
+ESP_037674_2090,Inverted channel,no,Alex,28.9320641,46.2065772,8.04,0.25
+ESP_037675_2170,Mamers Valles,Yes,Alex,36.6523448,17.8546,31.7,0.25
+ESP_037740_2235,Layers in Protonilus Mensae,Yes,Alex,43.3319025,41.8305676,2.29,0.25
+ESP_037845_2210,Central mound of crater in Protonilus Mensae,Yes,Alex,40.7305842,55.684335,13.85,0.5
+ESP_037883_1490,Layers in crater wall northeast of Hellas region,no,Alex,-30.803108,108.605111,13.56,0.25
+ESP_038097_2180,Stratigraphy of wall in Mamers Valles crater,yes,Alex,37.5778341,18.2186488,4.75,0.25
+ESP_038292_1445,Tongue-shaped landform in contact with raised,Maybe in the crater but not elsewhere,Alex,-35.099662,104.774118,6.21,0.25
+ESP_039384_2100,Cracks in apron around mound in Phlegra region,Maybe (degraded),Alex,29.8903375,174.353414,2.08,0.25
+ESP_040117_2025,Terrain between Mut and Cave Craters,(no samples identified),Alex,22.0581072,324.677487,2.1,0.25
+ESP_040351_2210,Lobate debris apron,Yes,Alex,40.7137457,53.2179445,49.38,0.5
+ESP_040787_2210,Surface features emanating from alcove in,No,Alex,40.7370421,30.1844103,2.73,0.25
+ESP_040826_2225,Hollow arcs in Moreux Crater,Maybe,Alex,41.9711812,43.3392769,2.91,0.25
+ESP_041222_2210,Surface features emanating from alcove in,No,Alex,40.7370544,30.1814603,9.23,0.25
+ESP_042238_2170,Flow features in Mamers Valles,Yes,Alex,36.6191425,15.5311494,2.5,0.25
+ESP_042435_2210,Lineated valley floor material in terrain north,Yes,Alex,40.9571954,34.6165595,53.92,0.5
+ESP_042725_2210,Lineated valley floor material in terrain north,yes,Eldar,40.9558679,34.6069845,53.92,0.5
+ESP_042778_2225,Possible tongue-shaped flow features in,yes,Eldar,42.036961,30.012819,9.82,0.25
+ESP_042812_2220,Terrain in Arcadia Planitia,maybe (Alex: I'd say yes),Kyle (Alex),41.8301083,182.564331,5.74,0.25
+ESP_043326_1795,Eastern rim of Nicholson Crater,no,Kyle,-0.3916478,196.332214,2.55,0.5
+ESP_043524_2220,Albedo monitoring in Phlegra-Diacria region,maybe (Alex: yes but not everywhere it thinks),Kyle (Alex),41.4237472,182.623687,10.74,0.25
+ESP_044044_2160,Possible phyllosilicate-rich terrain,yes,Alex,35.4882774,26.3027789,2.75,0.25
+ESP_044690_2225,Crater on lobate apron,yes,Alex,42.2437552,33.6442741,14.42,0.5
+ESP_044717_2205,Lineated valley floor material in terrain north,yes,Eldar,39.7681746,15.5683155,53.91,0.25
+ESP_044829_1575,Crater on floor of Bernard Crater,no,Alex,-22.497874,206.114005,3.22,0.5
+ESP_045098_2175,Candidate impact site,Mostly (some identified samples arent brain coral),Alex,37.3956768,56.2620704,14.41,0.25
+ESP_045191_2225,Crater on lobate apron,yes,Eldar,42.2764922,33.6389653,25.81,0.5
+ESP_045264_1870,Crater-like structure,no (yardangs?),Alex,6.73415185,209.028574,15.21,0.5
+ESP_045337_2145,Central structure of impact crater,yes,Alex,34.3547867,13.1663358,4.69,0.5
+ESP_045349_2235,Terrain north of Moreux Crater,yes,Eldar,43.405961,44.024301,28.75,0.25
+ESP_045508_2190,Deuteronilus Mensae lobate debris apron contact,yes,Alex,38.6820184,24.1210077,4.73,0.5
+ESP_045546_2145,Flows interacting in northern plains,no,Alex,34.2899798,67.5141612,2.94,0.25
+ESP_045608_2205,Arcadia Planitia,yes,Alex,40.8530449,173.263001,8,0.25
+ESP_045640_2210,Impact crater and ejecta partially buried by,yes,Eldar,40.6010567,21.0870891,9.61,0.25
+ESP_045793_1775,Volcanic flow features in southern Elysium,(no samples identified)-2.2553194,167.713927,2.27,0.5
+ESP_045917_2220,Gullies in crater in Deuteronilus Mensae,yes,Eldar,41.9121941,16.6824215,17.12,0.25
+ESP_045937_2190,Volcanic terrain near Erebus Montes,yes,Eldar,38.4412784,192.205845,28.09,0.25
+ESP_045944_2170,Rounded deposits on floor of heart-shaped,no. There's an inverted channel though!,Eldar,36.6717392,-0.243567,4.9,0.25
+ESP_046020_2140,Topography and geomorphology of surface and,no but good example of deflationary terrain mimicking brain coral,Eldar,33.8871326,87.2894027,35.5,0.25
+ESP_046021_2175,Two flows colliding in northern plains,Maybe in a couple places but mostly no,Alex,37.3277582,57.735498,4.21,0.25
+ESP_046049_2140,Channels in Arabia Terra,no,Kyle,33.8073199,13.3655562,2.79,0.25
+ESP_046061_2190,Lines of mounds on valley floor south of Moreux,yes (Alex: some detections are better than others),Eldar (Alex),38.7005024,45.699959,7.27,0.25
+ESP_046065_2260,1-km diameter crater,no,Kyle,45.8422681,295.98051,31.99,0.25
+ESP_046127_2220,Dipping layers in crater within Moreux Crater,yes,Alex,41.8062983,43.4227558,2.07,0.25
+ESP_046180_2225,Dipping layers along mesas in Ismeniae Fossae,yes,Alex,42.0825726,36.0951055,10.84,0.25
+ESP_046219_2225,Protonilus Mensae region,yes,Kyle,41.5768649,50.6496147,22.99,0.5
+ESP_046221_2170,Rounded deposits on floor of heart-shaped,no but good example of deflationary terrain mimicking brain coral,Alex,36.669203,-0.2418712,10.71,0.25
+ESP_046260_2145,Channels on crater wall in Arabia Terra,yes,Alex,34.1259483,13.1794213,4.86,0.5
+ESP_046264_2240,Modified crater on graben floor,No,Kyle,43.8449152,263.09949,14.07,0.5
+ESP_046294_2215,Impact monitoring site in Phlegra Montes,yes,Alex,40.7588384,164.514897,4.38,0.25
+output/ESP_046320_2205/mosaic_numbers.jpg,0.25,Maybe. shapes are consistent (Alex: I'd say yes),but it looks strange. Really cool though!,output/ESP_046320_2205/image_inverted.jpg,40.5280541,ESP_046320_2205,15.02
+ESP_046338_2270,Knobs north of Protonilus Mensae,Partially,Alex,46.585697,41.7266544,15.94,0.25
+ESP_046355_2260,1-km diameter crater,no - ejecta,Kyle,45.8369229,295.981303,30.05,0.25
+ESP_046422_1385,Albedo feature,no,Kyle,-40.989714,280.308833,10.99,0.25
+ESP_046430_2260,Protonilus Mensae debris apron,no,Alex,45.9019053,48.995457,2.47,0.5
+ESP_046444_2225,Flow features in Deuteronilus Mensae,no,Kyle,42.2782462,29.1234601,17.51,0.25
+ESP_046463_2160,Dark feature,no,Kyle,35.8566926,230.875611,3.12,0.25
+ESP_046483_2195,Nilosyrtis region dichotomy boundary scarp or,no,Kyle,38.9592877,44.32099,6.92,0.25
+ESP_046484_2145,Channel deposits,yes,Alex,34.7191031,16.962209,9.33,0.25
+ESP_046488_2250,Northern Tempe Terra,no,Kyle,44.6892097,267.90979,31.06,0.25
+ESP_046496_2260,Protonilus Mensae debris apron,Maybe (degraded?),Alex,45.8928177,48.9969756,3.64,0.5
+ESP_046497_2195,Deuteronilus Mensae lobate debris apron texture,yes. This might support Mangold's hypothesis though,Eldar,38.9479823,22.6767688,12.52,0.25
+ESP_046514_2250,Ridges and pits in Tempe Terra,yes,Alex,44.4910279,276.558123,9.34,0.25
+ESP_046521_2125,Landforms in Utopia Planitia,no (Alex: this looks like it may have been brain coral that was mantled but sand/dust),Kyle (Alex),32.4384422,87.2614702,3.9,0.25
+ESP_046549_2245,Brain terrain forming in Deuteronilus Mensae,yes (I would hope so based on the image description!),Alex,44.339249,40.7224206,3.27,0.25
+ESP_046600_2140,Field of small pitted cones,yes,Alex,33.6147761,90.8922716,3.99,0.25
+ESP_046616_2160,Channel in Mamers Vallis crater with possible,partially,Alex,35.5047544,14.8586438,8.71,0.25
+ESP_046654_2185,Lineated valley floor material in Coloe Fossae,yes,Alex,37.7274065,56.2278588,3.16,0.5
+ESP_046666_2125,Landforms in Utopia Planitia,this looks like it may have been brain coral that was mantled but sand/dust,Alex,32.4394507,87.2618826,3.76,0.25
+ESP_046697_2235,Acidalia Planitia terrain sample,(no samples identified)42.9425044,321.407468,2.92,0.25
+ESP_046704_2235,Northern plains,Yes,Alex,43.3515612,130.208818,2.52,0.25
+ESP_046707_2220,Candidate recent impact site,yes,Alex,41.4525499,48.7408973,27.45,0.25
+ESP_046708_2145,Valley attached to northern mid-latitude crater,no,Alex,34.3144936,22.4483987,2.76,0.25
+ESP_046709_2230,Northern plains,(no samples identified)42.6550699,353.899919,3.04,0.25
+ESP_046747_2220,Candidate recent impact site,yes,Alex,41.9040493,36.4297915,2.02,0.25
+ESP_046761_2205,Mamers Valles,yes,Eldar,40.1208762,15.6580619,21.54,0.25
+ESP_046786_2220,Flows along mound in Protonilus Mensae,yes,Alex,41.9040214,52.0658667,6.02,0.25
+ESP_046799_2150,Clasia Vallis region,Maybe just a bit on right side of image,Eldar,34.6489013,58.9186196,5.08,0.5
+ESP_046821_2230,Northern plains,yes,Alex,42.8383859,176.190872,6.75,0.25
+ESP_046839_2190,Linear features in valley south of Moreux Crater,yes,Eldar,38.6757202,45.4903475,23.17,0.5
+ESP_046849_2245,Northern plains,No (Alex: Yes),Eldar (Alex),43.9424217,131.176297,4,0.25
+ESP_046859_2080,Lycus Sulci,(no samples identified)28.6481904,220.358423,2.2,0.25
+ESP_046893_2155,Dipping layers along valley wall in Arabia Terra,Yes,Alex,35.2356308,11.7055108,18.67,0.5
+ESP_046897_1400,Landforms near Coracis Fossae,no,Alex,-39.803777,272.653096,3.16,0.25
+ESP_046904_2125,Flow near Nilosyrtis Mensae,no,Alex,32.320884,72.4381796,4.57,0.25
+ESP_046926_2200,Monitoring new impact site,Partially,Alex,39.5565223,190.046972,5.01,0.25
+ESP_046927_2160,Apron in Phlegra Montes,No (or maybe very degraded brain coral?),Alex,35.3628911,163.896082,63.69,0.5
+ESP_046976_2245,Terrain transition in Tantalus Fossae,no,Alex,44.1276661,263.710952,15.56,0.5
+ESP_047091_2165,Short channels in ejecta of northern mid-latitude,no,Alex,36.4108053,4.61287992,9.01,0.25
+ESP_047136_1400,Rocky ridge in Icaria region,no,Kyle,-39.513812,226.745031,11.18,0.25
+ESP_047164_2100,Terrain in Phlegra region,No (or maybe very degraded brain coral?),Alex,29.7014857,173.937948,2.36,0.25
+ESP_047177_1410,Sirenum Fossae,no,Alex,-38.629963,186.968027,4.21,0.25
+ESP_047180_1375,Contact near Reull Vallis,no (looks sublimation-related),Alex,-42.215417,105.419035,7.12,0.25
+ESP_047223_1345,Mid-latitude terrain sample,no,Alex,-45.097614,12.1947301,5.28,0.25
+ESP_047346_1365,Fresh small crater in Icaria Planum,maybe,Alex,-43.078405,253.457733,5.22,0.25
+ESP_047822_1380,Branched channels in Terra Sirenum,-41.533164,216.623163,2.36,0.25
+ESP_048166_2100,Cratered cones in Phlegra region,29.5114427,174.40015,3.09,0.25
+ESP_048851_2190,Candidate Red Dragon landing site in southern,yes,Alex,38.7364699,190.297841,4.43,0.25
+ESP_048949_2230,Surface of debris apron north of Arabia region,yes,Alex,42.8956322,34.0723393,11.88,0.25
+ESP_049291_2220,Flow in Protonilus Mensae,maybe - bottom,Kyle,41.5604435,56.2473204,4.12,0.25
+ESP_049306_2160,Exit breach in well-preserved crater,yes,Alex,35.7996932,7.54838855,2.26,0.25
+ESP_049502_2230,Pits near trough in Protonilus Mensae,yes,Alex,42.528051,55.6776573,9.88,0.25
+ESP_049555_2225,Tongue-shaped flow feature in Protonilus Mensae,yes,Alex,42.1112112,49.5780035,6.93,0.25
+ESP_049568_2185,Lineated valley floor material in the Coloe,yes,Alex,38.3826644,56.1137774,11.27,0.5
+ESP_049841_2150,Ridged surfaces near Phlegra Montes,maybe. Parallel ridges do mimick b.c. terrain but unclear whether it's actually that (Alex: yes),Eldar (Alex),34.540803,164.047325,24.6,0.5
+ESP_050255_2195,Breached crater rim,yes,Alex,38.9165652,20.4275139,3.46,0.25
+ESP_050447_1395,Valleys and Electris deposit in southern Gorgonum,no,Alex,-40.130585,187.397832,3.5,0.25
+ESP_050473_2200,Flow features in Erebus Montes,yes,Alex,39.4911423,187.961671,7.5,0.25
+ESP_050769_2210,Cirque valley drainage system,maybe the the southern part of the NE area,Alex,40.8712288,26.2478232,2.02,0.25
+ESP_050901_2210,Impact crater and ejecta partially buried by,no but i can see how it would get confused (Alex: I would say yes for the area SW of the large central crater),Eldar (Alex),40.6002309,21.0855138,6.33,0.25
+ESP_051256_2220,Crater monitoring,yes,Alex,41.4414686,48.7753096,31.17,0.25
+ESP_051264_2195,Plains near Erebus Montes,yes,Alex,39.1839829,190.533335,28.72,0.25
+ESP_051942_2210,Lineated valley floor material in terrain north,yes,Alex,40.5867573,42.0128017,2.84,0.5
+ESP_052385_2205,Sample region near Erebus Montes,yes and pretty fine,Eldar,40.1702267,186.334778,37.55,0.25
+ESP_052569_2200,Crater monitoring,yes,Alex,39.5463869,202.427135,4.67,0.25
+ESP_052602_2140,Brain terrain north of Cerulli Crater,yes,Eldar,33.7155737,22.1833001,15.7,0.25
+ESP_052675_2215,Region near Erebus Montes,yes and pretty fine,Eldar,41.0761421,188.433393,31.61,0.25
+ESP_053483_2220,Deposits in crater in Utopia Planitia,yes,Eldar,41.4772242,87.7191039,13.45,0.25
+ESP_053630_2195,Lineated valley fill north of Arabia region,yes,Alex,39.3750086,34.8894328,3.81,0.25
+ESP_053656_2205,Brain terrain south of Moreux Crater,maybe,Alex,40.0808514,44.1963578,3.94,0.25
+ESP_053694_2240,Scalloped depression,(no samples identified)43.5745234,85.9459434,4.37,0.25
+ESP_053868_2175,Layered features in brain terrain in Arabia,yes,Alex,37.0144924,17.8760095,15.9,0.25
+ESP_053870_2235,Pitted cones on ridge in Chryse Planitia,no,Alex,43.3811674,320.27128,24.72,0.25
+ESP_053936_2235,Pitted cones on ridge in Chryse Planitia,yes (Alex: no),Eldar (Alex),43.3828632,320.271983,28.91,0.25
+ESP_053954_2230,Crater monitoring,no,Kyle,42.576487,189.019764,14.43,0.25
+ESP_054508_2160,West of Erebus Montes,no,Alex,35.7121074,184.318671,15.17,0.25
+ESP_054526_2220,Glacial-like flow on mound in Protonilus Mensae,yes,Eldar,41.7680945,51.9475487,22.2,0.25
+ESP_054798_2180,West of Erebus Montes,Maybe. Craters in this image has a weird central ring (Alex: yes),Eldar (Alex),37.81387,186.951516,5.88,0.25
+ESP_054804_2190,Lineated valley flow into lobate debris apron in,yes,Alex,38.1214452,23.1238101,15.43,0.5
+ESP_054843_2100,Crater wall and floor,yes,Alex,29.6914458,39.5849031,19.72,0.5
+ESP_054897_2160,Floor features of northern mid-latitude crater,maybe,Alex,35.6910321,4.60226512,8.21,0.25
+ESP_054935_2220,Variety of brain terrain near east rim of Moreux,yes. Possibly a good candidate for evidence of sublimation origin hypothesis,Eldar,41.7827681,46.2201292,16.81,0.25
+ESP_054936_2180,Possible flow material in Mamers Valles,yes,Alex,37.4622796,19.6610363,45.29,0.25
+ESP_055009_2175,Western Erebus Montes,Very degraded,Alex,37.2875629,186.814244,6.97,0.25
+ESP_055014_2265,Protonilus Mensae debris-covered apron,Partially. Fine-scale,Alex,45.9284527,48.8775235,4.25,0.5
+ESP_055027_2250,Cracks along mound in Protonilus Mensae,Partially. Some brain coral but some definitely not brain coral,Alex,44.7732564,54.1808426,12.33,0.25
+ESP_055068_2200,Lineated valley fill north of Arabia region,yes,Alex,39.7572603,15.796181,68.7,0.25
+ESP_055080_2205,Crater floor features in Protonilus Mensae,yes,Alex,40.1050012,48.0930573,12.78,0.25
+ESP_055146_2220,Candidate recent impact site,yes,Alex,41.4487647,48.7675334,35.49,0.25
+ESP_055212_2195,Old glacier with possible marginal ridge south of,no,Alex,39.407474,44.7425802,2.72,0.25
+ESP_055220_2185,West of Erebus Montes,no,Alex,38.2337104,186.586592,24.36,0.25
+ESP_055278_2195,Confluence of channels near Ismeniae Fossae,no,Kyle,38.9294438,43.9549814,4.78,0.5
+ESP_055359_1800,Meridiani Planum stratigraphy,no (TARs),Alex,-0.3100854,-0.9118952,5.91,0.5
+ESP_055383_2135,Candidate recent impact site,no,Alex,33.1884549,58.0668516,4.05,0.25
+ESP_055536_2205,Bedforms in crater in Amazonis Planitia,Maybe. Definitely some split ridges,Alex,39.9840185,202.603459,2.99,0.25
+ESP_055547_1390,Terrain sample,no,Alex,-40.605608,270.427988,8.6,0.25
+ESP_055582_1365,Tongue-shaped flow in Rabe Crater,no,Alex,-43.319654,35.8938341,5.04,0.25
+ESP_056642_1370,Flow along crater wall in Claritas Fossae region,yes,Alex,-42.451508,263.043158,5.27,0.25
+ESP_056736_1395,Gully monitoring,no,Alex,-40.288958,217.071639,2.29,0.25
+ESP_056852_2200,Ascuris Planum,no,Alex,39.9045761,279.878893,3.71,0.5
+ESP_056928_1065,Southern Noachis Terra,no,Alex,-73.337892,24.112372,2.21,0.25
+ESP_056961_2170,Landforms west of Erebus Montes,no,Alex,36.744192,185.609955,17.22,0.5
+ESP_056966_2220,Crater monitoring,yes,Alex,41.4480314,48.7748365,3.14,0.25
+ESP_057012_1405,Mantle layers in Icaria Fossae,unlikely. But interesting erosional patterns in the crater floor (Alex: maybe yes. Widely spaced),Eldar,-38.943424,242.973502,3.02,0.25
+ESP_057053_1405,Mid-latitude terrain sample,no,Alex,-39.405614,204.381544,2.03,0.25
+ESP_057263_1375,Terra Sirenum crater infill,yes,Alex,-41.961356,230.562522,3.02,0.25
+ESP_057317_2210,Crater with preferential ejecta distribution on,"Mostly yes, but some false detections",Alex,40.8225556,188.940535,32.25,0.25
+ESP_057318_2140,Crater with concentric crater fill in Phlegra,maybe,Alex,33.9082601,163.032946,2.27,0.25
+ESP_057357_2225,Phlegra Dorsa,"Mostly yes, but some false detections",Alex,41.9720383,176.47938,42.78,0.25
+ESP_057515_2160,Erebus Montes,no,Alex,35.7422299,185.200641,20.72,0.25
+ESP_057599_2240,Pits forming lines in Protonilus Mensae,43.4663668,51.4138911,7.24,0.25
+ESP_057797_2220,Flow with odd shape in northern mid-latitudes,maybe (Alex: yes),Kyle (Alex),41.4880394,49.0164946,7.23,0.25
+ESP_057806_2155,Crater floor in Phlegra Montes,34.9767153,164.395177,2.15,0.25
+ESP_057863_2200,Flows in northern mid-latitudes,39.5289608,46.6316119,2.83,0.25
+ESP_058061_2195,Terrain south of Moreux Crater,no,Alex,39.274098,43.931649,3.45,0.25
+ESP_058153_2255,Pits forming lines in Protonilus Mensae,yes,Alex,45.1602708,51.076561,3.02,0.25
+ESP_058584_2155,Smooth area in Phlegra Montes,no,Alex,35.2291475,163.953915,21.83,0.25
+ESP_058641_2230,Variety of brain terrain near east rim of Moreux,yes,Alex,42.4709649,46.2342133,3.6,0.25
+ESP_058650_2130,Plains in Phlegra Montes,no (or perhaps very degraded),Alex,32.8131468,162.012871,12.51,0.25
+ESP_058795_2155,Smooth area in Phlegra Montes,no,Alex,35.2340526,163.953765,5.89,0.25
+ESP_058874_2160,Potential landing site in Phlegra Montes,no,Alex,35.8497648,164.037504,4.87,0.25
+ESP_059234_2185,Lineated valley floor material in Coloe Fossae,maybe (wide ridges),Alex,38.5776695,56.098293,20.77,0.25
+ESP_059507_2155,Smooth area in Phlegra Montes,no,Alex,35.2320038,163.953791,4.84,0.25
+ESP_059704_2165,West of Erebus Montes,no,Alex,36.2321841,185.469962,5.91,0.25
+ESP_060363_2200,Candidate landing site for SpaceX Starship east,partially,Alex,39.8269895,192.063218,7.83,0.25
+ESP_060429_2200,Candidate landing site for SpaceX Starship east,partially,Alex,39.8222403,192.064826,7.5,0.25
+ESP_060698_2220,Crater monitoring,yes,Eldar,41.4433733,48.7745846,40.22,0.25
+ESP_060707_2160,Candidate landing site for SpaceX Starship at,no,Alex,35.4936377,163.624665,2.09,0.25
+ESP_060773_2160,Candidate landing site for SpaceX Starship at,no,Alex,35.4918741,163.626382,2.67,0.25
+ESP_060856_2220,Pits along mound in Protonilus Mensae,yes,Eldar,41.7029504,55.5556078,14,0.25
+ESP_061015_2210,Lineated valley floor material in terrain north,yes,Alex,41.2257154,34.5718695,50.57,0.5
+ESP_061075_2195,Candidate landing site for SpaceX Starship in,yes. Tons and tons of fine scale circles!,Eldar,39.1718305,195.61021,31.83,0.25
+ESP_061141_2195,Candidate landing site for SpaceX Starship in,maybe in upper right,Eldar,39.1766348,195.6101,36.61,0.25
+ESP_061195_2170,Apron in Phlegra Montes,maybe,Alex,36.5950284,162.590797,30.75,0.25
+ESP_061616_2230,Crater monitoring,(no samples identified),Alex,42.5737938,189.026801,6.09,0.25
+ESP_062366_2260,Ice-filled graben,no,Alex,45.7568145,229.903779,4.43,0.25
+ESP_062432_2260,Ice-filled graben,no,Alex,45.7554912,229.903073,2.7,0.25
+ESP_062519_2210,Lineated valley floor material in terrain north,yes,Alex,40.4249076,15.4720522,22.57,0.25
+ESP_062526_2205,Monitoring new impact site,yes,Alex,40.3279656,185.509902,56.85,0.25
+ESP_062540_2165,Smooth apron in Phlegra Montes,maybe? Very linear,Alex,36.4008238,162.271534,6.02,0.25
+ESP_062730_2210,Lineated valley floor material in terrain north,yes,Eldar,40.424291,15.4724996,25.48,0.25
+ESP_062751_2165,Smooth apron in Phlegra Montes,maybe? Very linear,Alex,36.4034675,162.271014,5.37,0.25
+ESP_062796_2210,Head of Mamers Valles,yes,Eldar,40.5599509,11.5994617,7.03,0.25
+ESP_062830_2155,Smooth area in Phlegra Montes,Maybe (Alex: no),Eldar (Alex),35.0987134,164.04301,44.4,0.25
+ESP_062877_2230,Pitted cones on ridge in Chryse Planitia,no,Kyle,42.8067898,319.482969,4.58,0.25
+ESP_062943_2230,Pitted cones on ridge in Chryse Planitia,no,Kyle,42.8012516,319.484672,3.63,0.25
+ESP_062968_1505,Flat-topped ridge and flat-topped circular butte,no,Kyle,-29.048926,5.32767194,7.25,0.5
+ESP_063334_2140,Slopes of very fresh 10-km crater in Utopia,no,Kyle,33.6025361,84.1415511,3.24,0.25
+ESP_063823_2210,Debris flow,no,Alex,40.87064,51.3973511,3.35,0.25
+ESP_063930_2125,Candidate recent impact site,no,Kyle,32.1851999,11.7645018,15.24,0.25
+ESP_064021_2235,Pits in mantle or glacier northeast of Moreux,no,Alex,43.0672433,45.6958571,8.95,0.25
+ESP_064193_2235,Contact in Deuteronilus Mensae,yes,Alex,43.2750462,30.1173794,2.94,0.5
+ESP_064212_2280,Monitoring well-preserved 1-km crater,no,Kyle,47.529587,229.444945,2.85,0.25
+ESP_064281_1400,Volatiles and gullies,maybe,Kyle,-39.474663,158.137933,2.84,0.5
+ESP_064461_1425,Crater in southern mid-latitudes,maybe,Alex,-37.286215,283.953402,13.08,0.5
+ESP_064465_2155,Smooth area in Phlegra Montes,no,Alex,35.3006817,164.053524,41.24,0.25
+ESP_064491_1115,Active dunes with star-shaped fans,no,Kyle,-68.153931,191.680946,4.27,0.25
+ESP_064531_2155,Smooth area in Phlegra Montes,no,Alex,35.294055,164.054761,44.07,0.25
+ESP_064588_2225,Ridges in valley on rim of Moreux Crater,no,Alex,42.2846639,45.8575908,2.11,0.25
+ESP_064686_1405,Terrain on floor of crater in Claritas Fossae,maybe,Alex,-38.939295,261.80435,22.41,0.25
+ESP_064701_1745,Terrain sample near Mangala Valles,no,Kyle,-5.6180093,207.618165,2.04,0.5
+ESP_064733_2220,Brain terrain in Protonilus Mensae,Mostly yes,Alex,41.8327617,46.5616375,7.39,0.25
+ESP_064768_2070,Channels in Phlegra region,no,Kyle,26.9265246,173.919101,3.82,0.5
+ESP_064812_2225,Flow in Protonilus Mensae,yes,Alex,42.1200809,51.0559935,9.13,0.25
+ESP_065193_1390,Apron in Hellas Montes,no,Alex,-40.571755,102.349919,2.61,0.5
+ESP_065230_2170,Flow features surrounding mound in Phlegra,partially,Alex,36.6037853,161.209624,6.11,0.25
+ESP_065235_2085,Monitoring new impact site,no,Kyle,28.445705,25.1956118,15.05,0.25
+ESP_065710_2170,Esker candidates in Mamers Valles-Ismenius Cavus,yes,Alex,36.8283184,18.1635832,5.39,0.25
+ESP_066119_2170,Esker candidates in Mamers Valles-Ismenius Cavus,yes,Alex,36.8274521,18.1625378,18.73,0.25
+PSP_001334_2215,Fretted terrain valleys and apron materials,yes,Alex,40.952922,12.068385,65.58,0.25
+PSP_001372_2160,Fretted terrain valleys in the Choloe Fossae,partially,Alex,35.4886593,56.7917487,16.76,0.5
+PSP_001410_2210,Layered deposits in impact crater in Utopia,yes,Eldar,40.8039701,99.4955694,33.25,0.25
+PSP_001426_2200,Lobate feature in Deuteronilus Mensae region,yes but not everywhere that it thinks,Eldar,39.8089132,23.0702147,21.83,0.25
+PSP_001466_2215,Fretted terrain valleys and apron materials,maybe (likely),Kyle,40.9578429,12.0722982,62.2,0.25
+PSP_001528_2210,Kufra Crater gullies with diverse rock,yes,Alex,40.5843724,120.111838,11.58,0.25
+PSP_001564_2015,Flow of apron material around large blocks,no,Kyle,22.9666464,220.814969,8.68,0.25
+PSP_001570_2215,Lobate debris apron,yes but not everywhere that it thinks,Alex,40.9993541,54.6235618,8.26,0.25
+PSP_001630_1510,Zumba Crater: fresh crater with impressive,no,Kyle,-28.668128,227.011308,2.67,0.25
+PSP_001674_1610,Sample high thermal inertia area northwest of,no,Kyle,-18.792731,105.026352,2.24,0.25
+PSP_001768_2160,Juncture of valleys with lineated fill as seen in,no,Alex,35.5578686,56.6055029,46.76,0.25
+PSP_001834_2215,Lobate debris apron,yes,Alex,41.0036922,54.610506,12.36,0.25
+PSP_001858_2195,Gullies cutting southeast-facing slope of impact,no,Alex,39.1780373,116.406791,10.73,0.25
+PSP_001914_2185,Closed fretted terrain valley,yes but not everywhere that it thinks,Alex,38.2623788,28.3621334,12.82,0.25
+PSP_002046_2180,Boulders at base of fretted valley in,yes,Alex,37.7429161,24.3369469,35.37,0.25
+PSP_002096_2210,Layered deposits in impact crater in Utopia,maybe,Alex,40.8086757,99.4883228,48.63,0.25
+PSP_002099_2125,Fretted terrain channel,yes,Alex,32.0106938,18.5136223,5.54,0.25
+PSP_002175_2210,Layered deposits in impact crater in Utopia,yes,Alex,40.7967332,99.4952379,22.92,0.25
+PSP_002202_2250,Pits and cracks and polygons,(no samples identified)44.7250301,84.4408159,3.8,0.25
+PSP_002214_2210,Kufra Crater gullies with diverse rock,yes,Alex,40.590387,120.115229,17.15,0.25
+PSP_002327_2205,Ponded dark slope streak materials as seen in MOC,no,Kyle,40.1998953,272.170099,25.23,0.25
+PSP_002413_1410,Mantling material exposed on plateau cut by cliff,no,Kyle,-38.492421,95.1754767,3.02,0.25
+PSP_002632_2175,Slope streaks in Acheron Fossae,no,Alex,37.3122596,229.118182,2.02,0.25
+PSP_002679_2245,Convergence of two debris aprons,maybe,Alex,44.2748951,22.1689468,3.85,0.25
+PSP_002782_2230,Layered deposits within an impact crater in,yes,Alex,42.7463996,90.0340568,4.06,0.25
+PSP_002902_2205,Lineated valley fill in Coloe Fossae,yes,Alex,40.1767139,53.8966149,18.12,0.25
+PSP_003243_1415,Debris apron,Mostly no,Alex,-38.168861,113.157838,4.55,0.25
+PSP_003245_2205,Lineated valley fill in Coloe Fossae,40.1745684,53.8602464,16.54,0.25
+PSP_003514_1430,Mid-latitude mantle smooth to knobby texture,no,Alex,-36.686135,276.047472,4.02,0.5
+PSP_003699_1380,Possible small channel on floor of Warrego Valles,no,Alex,-41.59639,266.860152,14.09,0.25
+PSP_004097_2185,Knobs and dissected mantle in Arcadia Planitia,maybe - weird image artifacts38.1291759,190.205433,3.94,0.25
+PSP_004200_1380,Warrego rise in Tharsis region,-41.863306,267.953896,4.48,0.25
+PSP_004833_1400,Tharsis region - Warrego Valles rise,no,Alex,-39.769418,266.22256,9.57,0.25
+PSP_004899_1380,Interesting wormy patterned gound,-41.518549,264.393907,9.55,0.25
+PSP_005110_1385,Sample unusual wormy patterned ground,-41.029524,264.618466,18.98,0.25
+PSP_005632_2200,Lineated valley fill in Ismeniae Fossae,39.8790968,42.4213817,7.75,0.25
+PSP_005737_2185,Mound in lineated valley fill,38.3829454,56.2000662,8.18,0.25
+PSP_005857_2225,Layered mesa in Deuteronilus Mensae,42.0678308,19.4740422,9.37,0.25
+PSP_006213_2185,Material in Mamers Valles that seems to have,38.0229046,20.0973389,25.99,0.25
+PSP_006252_2220,Canyon floor flow and debris apron,41.7449449,34.6188315,17.28,0.25
+PSP_006754_2180,Dissected mantle terrain,no,Kyle,37.8417451,8.49854217,9.41,0.25
+PSP_006772_1375,Layered materials and dunes on floor of crater in,no,Kyle,-42.382625,247.995004,2.87,0.25
+PSP_006794_1420,Crater with central pit and tongue-shaped,maybe - eroded,Kyle,-37.787371,5.77046472,2.66,0.25
+PSP_006806_2215,Lobate flow features emanating from alcoves in,no,Alex,41.1529393,29.5384806,36.5,0.25
+PSP_006807_1395,Crater floor and central peak,no,Kyle,-40.028564,11.785093,4.54,0.25
+PSP_006827_2210,Mound in Arcadia Planitia,40.6295352,174.429265,4.73,0.25
+PSP_007096_2215,Lobate flow features emanating from alcoves in,no,Alex,41.1550621,29.5389361,36.51,0.25
+PSP_007644_2190,Terrain near Erebus Montes,38.5431184,187.20442,2.2,0.25
+PSP_007795_2175,Lineated valley fill in Deuteronilus Mensae,37.3557981,24.6389544,5.26,0.25
+PSP_007848_2195,Aligned pits in fretted terrain,yes,Alex,39.2312997,16.7154564,30.54,0.25
+PSP_008158_1825,Region North of Nicholson Crater,no,Kyle,2.22113654,196.466392,4.42,0.5
+PSP_008483_2250,Aligned cratered domes in Acidalia Planitia,no,Kyle,44.4450201,316.980671,3.31,0.25
+PSP_008995_2165,Possible collapsed slab along walls of Mamers,yes,Alex,36.0600153,15.5588193,7.32,0.25
+PSP_009330_1875,Layering in Gigas Sulci,no,Kyle,7.58350133,232.84715,3.78,0.25
+PSP_009437_2190,Mounds in Erebus Montes,no,Kyle,38.6892504,187.622356,26.07,0.25
+PSP_009535_2240,Merging lobate debris aprons of Deuteronilus,43.7673186,29.3763103,2.02,0.25
+PSP_009588_2175,Lineated valley fill in Deuteronilus Mensae,37.3503206,24.6412726,9.94,0.25
+PSP_009678_2220,Layered deposits in impact crater in Utopia,41.4852129,87.716024,25.71,0.25
+PSP_009745_2165,Possible olivine-rich terrain,no,Kyle,35.9954692,59.6659169,2.59,0.25
+PSP_009747_2180,Patterned ground,37.6085477,4.51710001,14.92,0.25
+PSP_009754_2205,Thermal boundary,40.3308628,172.950933,15.45,0.25
+PSP_009799_2205,Lobate debris apron feature in the Deuteronilus,40.3210538,23.7893492,32.49,0.25
+PSP_009839_2160,Possible phyllosilicates in Mamers Valles region,35.4635121,13.4739181,12.82,0.25
+PSP_009956_2160,Merging fretted terrain valleys of Coloe Fossae,no,Alex,35.7148365,56.4795882,16.89,0.25
+PSP_010159_2270,Debris apron surface texture,yes,Alex,46.8121846,275.722868,41.54,0.5
+PSP_010225_2235,Rim of eroded crater near Reykholt Crater,43.1177152,273.723243,8.03,0.25
+PSP_010320_1780,Arcuate ridges in Medusae Fossae Formation,no,Kyle,-2.0915181,206.010842,2.46,0.25
+PSP_010346_1570,Graben in Memnonia Fossae,no,Kyle,-23.01252,219.606005,4.79,0.5
+PSP_010366_2155,Sample of landforms in Viking images 231S33 and,yes,Kyle,35.3195233,25.5012326,50.4,0.25
+PSP_010439_2430,Sample of possible olivine-rich terrain,no,Alex,63.0573477,187.218522,7.91,0.25
+PSP_010788_2165,Very fresh small impact crater,mostly no - maybe one eroded tile,Kyle,36.0613807,23.3296858,5.63,0.25
