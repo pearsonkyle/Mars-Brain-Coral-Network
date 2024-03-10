@@ -157,9 +157,11 @@ or for the full-pipeline provide the segmentation weights as an input argument (
 
 The flag `--reprocess` will overwrite existing masks otherwise those images are skipped to avoid reprocessing. The `--base_url` flag is used to point to the location of the HiRISE images on disk or over the web depending on whether `https` is in the string.
 
-![](figures/mars_brain_coral_map.png)
+![](figures/mars_map_brain_coral.png)
 
 A map of candidate regions that contain Brain Coral plotted over elevation data. Our survey vetted 50,000 HiRISE images down to ∼500 candidates. Of those candidates, we manually vetted the top 50% with respect to area of detection and labelled the results above. Green areas indicate brain coral, orange dots represent a “maybe” label and red means no brain coral is present. The elevation data is blended from the Mars Orbiter Laser Altimeter (MOLA), an instrument aboard NASA’s Mars Global Surveyor spacecraft (MGS), and the High-Resolution Stereo Camera (HRSC), an instrument aboard the European Space Agency’s Mars Express (MEX) spacecraft.
+
+![](figures/figures/mars_brain_coral_latitudes.png)
 
 # License
 
