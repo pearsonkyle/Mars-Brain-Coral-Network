@@ -165,7 +165,7 @@ if __name__ == "__main__":
     if not args.fast:
         # remove groups smaller than 3 pixel, may take ~1-2 hours
         for i in tqdm(range(1, ngroups+1)):
-            if (groups == i).sum() < 4:
+            if (groups == i).sum() < 512*512*0.5:
                 mask[groups == i] = False
 
     mask = binary_dilation(mask, iterations=4)

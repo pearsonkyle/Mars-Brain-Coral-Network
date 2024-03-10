@@ -87,7 +87,7 @@ def main():
         hiriseGenerator = hiriseFileGenerator(args.base_url)
 
     # random integer between 20-40 for vpn stuff
-    rand_int = np.random.randint(15,30)
+    rand_int = np.random.randint(50,100)
 
     # loop over generator
     for i, img_url in enumerate(hiriseGenerator):
