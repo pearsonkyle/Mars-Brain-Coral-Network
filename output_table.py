@@ -94,7 +94,7 @@ def parse_args():
 
     help_ = "Choose a directory to save data"
     parser.add_argument("-o", "--output", help=help_, type=str, default="output")
-    parser.add_argument("-p", "--percent_tol", help="don't show results smaller than this % Area", type=float, default=1)
+    parser.add_argument("-p", "--percent_tol", help="don't show results smaller than this % Area", type=float, default=5)
 
     return parser.parse_args()
 
@@ -117,10 +117,6 @@ if __name__ == "__main__":
 #  'acq_date': '2016-01-24T08:16:05.301',
 #  'segmentation_mask_sum': 9873215,
 #  'segmentation_percent': 0.543835481386582}
-
-    # https://hirise-pds.lpl.arizona.edu/PDS/EXTRAS/RDR/PSP/ORB_001400_001499/PSP_001410_2210/PSP_001410_2210_RED.browse.jpg
-    
-    # https://hirise-pds.lpl.arizona.edu/download/PDS/RDR/ESP/ORB_037500_037599/ESP_037556_2245/ESP_037556_2245_RED.JP2'
 
     # load csv file 
     comments = pd.read_csv("Brain Coral Assessment - Revised_Table.csv")
@@ -221,7 +217,7 @@ if __name__ == "__main__":
 
     """))
 
-    output_file("table.html", title="HiRISE Brain Coral Table")
+    output_file("index.html", title="HiRISE Brain Coral Table")
 
     show( 
         column(
