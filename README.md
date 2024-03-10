@@ -1,13 +1,12 @@
 # Brain Coral Detection and Segmentation
 
-One of the key drivers of the Mars Exploration Program is the search for evidence of past or present life.  In this context, the most relevant martian environments to search for extant life are those associated with liquid water; and locations that experience periodic thawing of near-surface ice. Here, we propose an investigation into the genesis of “Brain Coral Terrain”, a terrain on Mars whose similarity in morphology and scale to sorted stone circles on Earth suggests that it may have formed as a consequence of freeze/thaw cycles, and could be a high priority candidate for astrobiological exploration.
+One of the key drivers of the Mars Exploration Program is the search for evidence of past or present life.  In this context, the most relevant martian environments to search for extant life are those associated with liquid water; and locations that experience periodic thawing of near-surface ice. Here, we propose an investigation into the genesis of “Brain Coral Terrain”, a terrain on Mars whose similarity in morphology and scale to sorted stone circles on Earth suggests that it may have formed as a consequence of freeze/thaw cycles, and could be a high priority candidate for astrobiological exploration. 
 
-For more information see: [https://www.overleaf.com/read/dqqmtfzqzdfs#65edfc]()
-
-[PDF Paper](Brain_Coral_Mapping.pdf)
+For more information:
+- [Arxiv Paper](https://arxiv.org/abs/2311.12292)
+-  [Results Table](https://pearsonkyle.github.io/Mars-Brain-Coral-Network/)
 
 ![](figures/ESP_016287_ZOOM.png)
-
 
 ## Mid Latitude Patterned Ground
 

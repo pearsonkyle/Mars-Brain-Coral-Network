@@ -207,14 +207,12 @@ if __name__ == "__main__":
         document.getElementById("image").style.width = "1000px";
         document.getElementById("image").style.opacity = 1;
 
-        if (this.active.includes(0)) {
-            document.getElementById("overlay_mask").style.opacity = 0.666;
-        } 
-
-        if (this.active.includes(1)) {
-            document.getElementById("image").style.width = "4096px";
-        } 
-
+        if (this.active.includes(0)){
+            document.getElementById("overlay_mask").style.opacity = 1;
+        }
+        if (this.active.includes(1)){
+            document.getElementById("image").style.width = "auto";
+        }
     """))
 
     output_file("index.html", title="HiRISE Brain Coral Table")
