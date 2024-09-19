@@ -28,7 +28,7 @@ def parse_args():
 
     parser.add_argument("-r", "--res", help="resolution to decode JPEG2000 files at (0 is highest)", type=int, default=2)
 
-    parser.add_argument("-d", "--data", help="Directory of training data", type=str, default="D:/MDAP/training")
+    parser.add_argument("-d", "--data", help="Directory of training data", type=str, default="/mnt/d/MDAP/training/")
     
     parser.add_argument("-e", "--epochs", help="Number of training epochs", type=int, default=10)
 
@@ -344,7 +344,7 @@ if __name__ == '__main__':
             fname = f"models/{model_type}_{args.size}_{args.mode}_{args.res}_history_{fcount}.json"
 
         #history = model.fit(X_train, y_train, epochs=args.epochs, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))
-        model.save_weights(f"models/{model_type}_{args.size}_{args.mode}_{args.res}_{fcount}.h5")
+        model.save_weights(f"models/{model_type}_{args.size}_{args.mode}_{args.res}_{fcount}.weights.h5")
         #plotLoss(history,args)
 
         # predict metrics

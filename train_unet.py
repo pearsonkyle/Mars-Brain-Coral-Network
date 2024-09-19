@@ -115,7 +115,7 @@ def train_model(model, model_name, X, y, epochs, shuffle, chunksize=500, verbose
                     # metrics for training sequentially get name altered e.g. 'mean_io_u_1'
             _ = gc.collect()
 
-    model.save_weights(f"models/{model_name}_weights.h5")
+    model.save_weights(f"models/{model_name}.weights.h5")
 
     # create plot example
     ri = np.random.randint(X.shape[0])
@@ -227,7 +227,7 @@ def parse_args():
     parser.add_argument('--encoder', action='store_true', default=True, 
             help="Pre-train the encoder on downsampled data before training a decoder with upscaling")
 
-    parser.add_argument("-d", "--datadir", type=str, default="training/",
+    parser.add_argument("-d", "--datadir", type=str, default="/mnt/d/MDAP/training/",
             help="Choose a directory of images to process")
 
     parser.add_argument("-t", "--threads", help="number of threads for background class", default=1, type=int)

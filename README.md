@@ -22,13 +22,14 @@ For more information:
 
 Set up a conda environment with the following dependencies:
 
-**MAC silicon:**
+**MAC silicon / Linux:**
 ```
 conda create -n mdap python=3.11
 conda activate mdap
 conda install -c conda-forge glymur
-pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib tensorflow bokeh==2.4.3
-pip install tensorflow-metal 
+pip install numpy opencv-python scikit-learn scikit-image seaborn beautifulsoup4 tqdm matplotlib tensorflow bokeh==2.4.30
+pip install tensorflow-metal (mac only)
+python -m pip install tensorflow[and-cuda] (linux only)
 ```
 
 **Windows:**
