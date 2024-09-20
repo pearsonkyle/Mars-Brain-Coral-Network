@@ -19,7 +19,7 @@ def parse_args():
 
     parser.add_argument("-w", '--weights', help='which pretrained weights to use for the network', type=str,
                          #default="models/mobilenet_256_spatial_2_0.h5")
-                         default="models/mobilenet_128_spatial_2_0.h5")
+                         default="models/mobilenet_128_spatial_2_1.weights.h5")
                          #default="models/cnn_256_spatial_2_0.h5")
                          #default="models/cnn_256_dct_2_4.h5")
 
