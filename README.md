@@ -53,6 +53,19 @@ pip install numpy==1.20.0 opencv-python scikit-learn scikit-image==0.19.0 seabor
 
 The dependencies can get rather particular if you want to use the DCT classifier. Otherwise, we recommend using a newer version of tensorflow (> 2.6) which will allow you to use the MobileNETv3 Classifier, it's just as fast and more accurate. The architecture changed for MobileNET after 2.6 so the model weights won't load on any older versions of tf. The DCT classifier is still available in the `models/` directory if you want to use it.
 
+## Download the weights
+
+Install git-lfs to download the weights for the models:
+
+`brew install git-lfs` (mac only)
+
+https://git-lfs.com/
+
+`git lfs install`
+
+`git lfs pull`
+
+
 ## Searching for Brain Coral
 1. Navigate to the [HiRISE Catalog](https://www.uahirise.org/catalog/) and download a JP2 image. Please use the JP2 Map-projected Black + White image. These will typically range in size from ~100-1000 MB
 
